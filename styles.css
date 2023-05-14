@@ -274,12 +274,17 @@
 				}
 		
 				section.quote h2 {
-				width: 70vw;
+				width: 55vw;
+				line-height: 6vh;
 				text-align: center;
 				margin: auto;
 				color: #f7f7f7;
 				position: relative;
 				top: 10vh;
+				  }
+
+				  section.quote #author  {
+					margin-top: 5vh;
 				  }
 	
 		section.testimonios {
@@ -936,6 +941,25 @@
 		button.bio_cta:hover {
 				background-color: #333;
 			  }
+
+			  section.quote {
+				height: 40vh;
+				background-color: #515153;
+				}
+		
+				section.quote h2 {
+				width: 55vw;
+				line-height: 6vh;
+				text-align: center;
+				margin: auto;
+				color: #f7f7f7;
+				position: relative;
+				top: 10vh;
+				  }
+
+				  section.quote #author  {
+					margin-top: 5vh;
+				  }
 	
 	
 		section.testimonios {
@@ -1637,6 +1661,7 @@
 		section.quote {
 		height: 40vh;
 		background-color: #515153;
+		margin-top: -3vh;
 		}
 
 		section.quote h2 {
