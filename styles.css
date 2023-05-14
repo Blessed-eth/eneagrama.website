@@ -1,0 +1,2072 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+	border: none;	
+}
+
+@font-face {
+	font-family: 'Canela', 'GreatDayBold', 'Agrandir';
+	src: url('./fonts/FontsFree-Net-Canela-Regular.ttf') format('truetype'),
+		 url('./fonts/Great Day bold Personal Use') format('truetype'),
+		 url('./fonts/Agrandir-Regular.ttf') format('truetype');
+  }
+  
+
+	/* hi-res laptops and desktops */ 
+	@media (min-width:1024px) {
+
+		html {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			scroll-behavior: smooth;
+		}
+		
+		body {
+			min-height: 100vh;
+			height: 100vh;
+			width: 100%;
+			margin: 0;
+			overflow-x: hidden;
+		}
+	
+		header {
+			background-color: #659FA3;
+			stroke: rgba(112,112,112,1);
+			height: 20vh;
+			width: 100vw;
+			overflow: hidden;
+		}
+
+		#logo0 img{
+			width: 40px;
+			margin-top: 8vh;
+			margin-left: 3vw;
+		}
+	
+		#logo {
+			left: 7vw;
+			top: 8vh;
+			position: absolute;
+			overflow: visible;
+			width: 90vw;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Great Day bold Personal Use';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.5em;
+			color: rgba(0,0,0,1);
+			letter-spacing: 2px;
+		}
+	
+		#logo a {
+			color: inherit;
+			text-decoration: none;
+		}
+	
+		#slogan {
+			left: 7vw;
+			top: 13vh;
+			position: absolute;
+			overflow: visible;
+			width: 508px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Agrandir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1em;
+			color: rgb(0, 0, 0);
+			letter-spacing: 0.8px;
+		}
+		/* Styling for the hamburger icon */
+		.hamburger {
+			display: none;	
+		}
+	
+		.nav-menu {
+			height: 100%;
+			
+		}
+	
+		/* Styling for the menu */
+		.menu-box {
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 20vh;
+			position: absolute;
+			display: flex;
+			justify-items: center;
+			align-items: center;
+		}
+	
+		/* Styling for the menu buttons */
+		.menu_buttons {
+			list-style: none;
+			left: 30vw;
+			margin-left: 6vw;
+			white-space: nowrap;
+			margin-right: 3vw;
+		}
+	
+		.menu_buttons li {
+			display: inline-block;
+			margin-left: 5vw;
+			wrap: nowrap;
+		}
+	
+		.menu_buttons li a {
+			padding: 15px;
+			color: #000;
+			text-decoration: none;
+			font-family: "Agrandir";
+			font-size: 1.2em;
+		}
+	
+		section {
+			height: 100vh;
+			flex: 1; /* distribute available space equally */
+			background-color: #eee; /* optional styling */
+		}
+	
+		#hero {
+			width: 100vw;
+			height: 80vh;
+			overflow: hidden;
+			top: 20vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	
+		#hero_img {
+			position: relative;
+			width: 100vw;
+			height: 80vh;
+			overflow: hidden;
+		}
+	
+		#rockclimb {
+			width: 290vw;
+			position: relative;
+			right: 95vw;
+			height: 117vh;
+			top: -16vh;
+		}
+	
+		h1 {
+			position: absolute;
+			font-family: 'Canela';
+			text-align: center;
+			vertical-align: middle;
+			letter-spacing: 5px;
+			z-index: 1;
+			top: 40vh;
+			font-size: 3em;
+		}
+	
+		section.bio {
+			width: 100vw;
+			height: 90vh;
+			top: 85vh;
+			display: flex;
+			background: linear-gradient(to bottom, #E6E6E6, #8d8d8d);
+		}
+	
+		#title_2 {
+			height: 20vh;
+			width: 50vw;
+			top:0;
+			position: relative;
+			letter-spacing: 2vh;
+			overflow: visible;
+			white-space: nowrap;
+			text-align: center;
+			z-index: 1;
+			font-family: 'Canela';
+		}
+	
+		h2 {
+			font-family: 'Canela';
+			font-size: 2em;
+		}
+	
+		#biotext {
+			min-height: auto;
+			height: 40vh;
+			width: 45vw;
+			color: rgba(85,85,85,1);
+			letter-spacing: 0.8px;
+			z-index: 1;
+			position: relative;
+			line-height: 2;
+			top: 18vh;
+			right: 45vw;
+		}
+	
+		#biotext_p {
+			flex: 1;
+			width: 97%;
+			height: 100%;
+			font-size: 1em;
+			font-family: 'Agrandir';
+	
+		}
+	
+		#biopic {
+			min-width: 100%;
+			left: 50%;
+			height: 90vh;
+			overflow: hidden;
+			position: absolute;
+		}		
+	
+		#biopicimg {
+			position: relative;
+			min-height: 10%;
+			width: 60%;
+			left: -5vw;
+			bottom: 10vh;
+		}
+
+		#bioinfo {
+			height: 20vh;
+			width: 30vw;
+			left: 18vh;
+			bottom: -70vh;
+			position: absolute;
+			overflow: hidden;
+		}
+
+		#bioinfopic {
+			width: auto;
+			height: 100%;
+			max-width: 100%;
+			min-height: 100%;
+			object-fit: contain;
+			position: relative;
+		  }
+	
+		button.bio_cta {
+			display: inline-block;
+			background-color: black;
+			color: white;
+			padding: 15px 30px;
+			text-decoration: none;
+			border-radius: 5px;
+			position: absolute;
+			height: 8vh;
+			right: 72vw;
+			bottom: -82vh;
+			cursor: pointer;
+			font-family: "Agrandir";
+		  }
+	
+		button.bio_cta:hover {
+				background-color: #333;
+			  }
+
+			  section.quote {
+				height: 40vh;
+				background-color: #515153;
+				}
+		
+				section.quote h2 {
+				width: 70vw;
+				text-align: center;
+				margin: auto;
+				color: #f7f7f7;
+				position: relative;
+				top: 10vh;
+				  }
+	
+		section.testimonios {
+			position: relative;
+			overflow: visible;
+			width: 100vw;
+			height: 100vh;
+			background-color: #C9C9C9;
+			top: 0;
+			margin-bottom: -5vh;
+			display: flex;
+			flex-direction: column;
+	
+		}
+	
+		#title_3{
+			overflow: visible;
+			white-space: nowrap;
+			font-family: 'Canela';
+			color: rgba(0,0,0,1);
+			text-align: center;
+			margin-top: 5vh;
+		}
+	
+		.swiper-container {
+			width: 100vw;
+			height: 80vh;
+			overflow: hidden;
+			margin-top: 5vh;
+		}
+	
+		.swiper-wrapper {
+			position: relative;
+			width: 205vh;
+			height: 70vh;
+		  }
+	
+		  .swiper-slide {
+			position: relative;
+			top: 0;
+			width: 90vw;
+			height: 100%;
+			opacity: 1; /* add this line back */
+			transition: opacity 0.5s ease;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		  }
+		  
+		  .swiper-slide.active {
+			position: relative;
+			top: 0;
+			width: 100vw;
+			height: 100%;
+		  }
+		  
+		  .swiper-slide img {
+			max-width: 80vw;
+			max-height: 100%;
+		  }
+	
+		  .swiper-slide.test_name, .swiper-slide.test {
+			padding: 20px;
+			margin: 0;
+			color: #fff;
+			background-color: rgba(0,0,0,0.5);
+			width: 100%;
+		  }
+	
+		  .prev-button, .next-button {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 2em;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		  }
+		  
+		  .prev-button {
+			left: 20px;
+			color: black !important;
+		  }
+		  
+		  .next-button {
+			right: 20px;
+		  }
+		  .swiper-button-next::after {
+			color: black !important;
+		}
+			.swiper-button-prev::after {
+			color: black !important;
+		}
+	
+		  .swiper-pagination {
+			height: 10px;
+			margin-bottom: 5vh;
+			width: 50px;
+		  }
+	
+		.test_box {
+			background-color: white;
+			height: 50vh;
+			width: 60vh;
+			margin: 2vh auto;
+			bottom: 50vh;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		#test_box_1 {
+			left: 15vw;
+			top: 5vh;
+		}
+
+		#test_box_2 {
+			width: 60vh;
+			height: 40vh;
+			right: 10vh;
+			top: 10vh;
+		}
+
+		#test_box_3 {
+			width: 60vh;
+			height: 45vh;
+			top: 10vh;
+			left: 30vh;
+		}
+	
+		#test_1, #test_2, #test_3 {
+			margin: 5vh auto;
+			width: 75%;
+		}
+	
+		#test_text_1, #test_text_2, #test_text_3 {
+			position: relative;
+			font-family: 'Canela';
+			font-size: 1.8em;
+			top: -10%;
+			text-align: center;
+		  }
+	
+		#test_name_1, #test_name_2, #test_name_3 {
+			position: relative;
+			font-size: 1em;
+			font-family: "Agrandir";
+			text-align: left;
+			width: 80vw;
+			left: 10vw;
+			top: -10%;
+		}
+		
+		#test_img_1  {
+			position: absolute;
+			width: 40vh;
+			top: 0;
+			left: 32%;
+			
+		}
+
+		#test_img_2 {
+			position: absolute;
+			width: 40vh;
+			top: 0;
+			left: 58%;
+		}
+
+		#test_img_3 {
+			position: absolute;
+			width: 40vh;
+			top: 0;
+			left: 35%;
+		}
+	
+		section.servicios {
+			position: relative;
+			width: 100vw;
+			height: 110vh;
+			left: 0px;
+			top: 0;
+			background-image: url("./img/ComponentTMP_0-image.png");
+		}
+	
+		#title_4 {
+			white-space: nowrap;
+			font-family: 'Canela';
+			color: rgba(0,0,0,1);
+			text-align: left;
+			margin-left: 5vw;
+			height: 25vh;
+			top: 2vw;
+			position: relative;
+		}
+	
+		.box-container {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin: 0 8vw;
+			top: -5vh;
+		  }
+		  
+		  .box {
+			width: 30vh;
+			height: 30vh;
+			border: 5px solid black;
+			margin: 2vh 4vw;
+			display: flex;
+			flex-direction: row;
+			border-radius: 20px; /* or any other value you prefer */
+		  }
+	
+		  .program {
+			font-family: 'Canela';
+			font-size: 1.5em;
+			width: 80%;
+			height: 10vh;
+			position: relative;
+			text-align: center;
+			justify-content: center;
+			border-bottom: 1px solid black; /* Set the bottom border to a solid black line */
+			top: 3vh;
+			left: 5vh;
+		  }
+	
+		  .box a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			background-color: #000;
+			border-radius: 20px;
+		  }
+	
+		.box-container .box button {
+			width: 90%;
+			height: 20%;
+			position: relative;
+			text-align: center;
+			border-radius: 40px;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+			font-family: "Agrandir";
+			margin-top: 20vh;
+			margin-left: -15vh; /* Center horizontally */
+			margin-right: 4vh;
+		  }
+	
+		  button.btn-agendar {
+			font-size: 0.4em;
+			bottom: 5vh;
+		  }
+	
+		  .box-container #box2 button.btn-agendar {
+			width: 90%;
+			height: 15%;
+			border-radius: 40px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			cursor: pointer;
+			font-family: "Agrandir";
+			 margin-top: 15vh;
+			top: 12vh; /* adjust the value to position the button as desired */
+			  left: 25%; /* center the button horizontally */
+			display: none;
+		  }
+	
+		  
+		section.contacto {
+			margin: 0;
+			overflow: visible;
+			width: 100vw;
+			height: 100vh;
+			background-color: #71B9BE;
+		}
+	
+		#title_5 {
+			position: absolute;
+			font-family: 'Canela';
+			color: rgba(0,0,0,1);
+			width: 6vw;
+			height: 15vh;
+			padding-top: 3vh;
+			text-align: left;
+			margin-left: 10vw;
+			border-top: 3px solid black;
+		}
+	
+		form {
+			position: relative;
+			top: 20vh;
+		}
+	
+		.form-group {
+			margin-bottom: 5vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
+		  
+		input[type="text"], input[type="email"], textarea {
+			position: relative;
+			border-radius: 30px;
+			border: 1px solid black;
+			width: 40%;
+			padding: 10px;
+			font-size: 16px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			font-family: "Agrandir";
+			background-color: transparent;
+			left: 20vw;
+			resize: none;
+		}
+		  
+		input::placeholder {
+			font-family: "Agrandir";
+			color: #999;
+			text-indent: 1vw;
+		  }
+	
+		textarea::placeholder {
+			font-family: "Agrandir";
+			color: #999;;
+			text-indent: 1vw;
+		}
+		  
+		button[type="submit"] {
+			background-color: #000;
+			color: #fff;
+			border: none;
+			border-radius: 30px;
+			padding: 10px 20px;
+			cursor: pointer;
+			width: 40vw;
+			right: 10vw;
+			position: absolute;
+			z-index:2;
+			font-family: "Agrandir";
+		}
+		  
+		button[type="submit"]:hover {
+			background-color: #424141e9;
+			
+		}
+	
+		  .social-media {
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			position: relative;
+			bottom: 4vh;
+			height: 5vh;
+			width: 90%;
+			top: 22vh;
+			left: 20vh;
+		  }
+		  
+		  .social-media a {
+			margin: 0 10px;
+			color: #333;
+			font-size: 24px;
+			width: 3vh;
+			height: 3vh;
+		  }
+	
+		  .icon-facebook, 
+		  
+		  .social-media a:hover {
+			color: #4267b2; /* change the color on hover */
+		  }
+	
+		  footer {
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			margin-left: 4.5vw;
+		  }
+	
+		  #dev span {
+			position: absolute;
+			left: 0;
+			transition: transform 0.5s ease;
+			opacity: 1;
+			color: #000;
+			font-family: 'Agrandir';
+		  }
+	
+		  #dev {
+			position: relative;
+			cursor: pointer;
+			width: 40px;
+			height: 40px;
+			width: 150px;
+			top: 40vh;
+			left: 6vw;
+		  }
+		  
+		  #dev #dev_text {
+			opacity: 0;
+			font-family: 'Agrandir';
+		  }
+		  
+		  #dev:hover #dev_text {
+			transform: translateX(15%);
+			opacity: 1;
+			transition: opacity 0.5s ease, transform 0.5s ease;
+		  }
+		  
+		  #dev:hover p {
+			opacity: 0;
+			transition: opacity 0.5s ease, transform 0.5s ease;
+			transform: translateX(-100%);
+		  }
+	}
+
+	@media (min-width:768px) and (max-width:1024px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+		html {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			scroll-behavior: smooth;
+		  }
+		  
+		  body {
+			min-height: 100vh;
+			height: 100vh;
+			width: 100%;
+			margin: 0;
+			overflow-x: hidden;
+		  }
+	
+		
+	
+		header {
+			background-color: #659FA3;
+			stroke: rgba(112,112,112,1);
+			height: 20vh;
+			width: 100vw;
+			overflow: hidden;
+		}
+
+		#logo0 img{
+			width: 40px;
+			margin-top: 6vh;
+			margin-left: 1.5vw;
+		}
+	
+		#logo {
+			left: 7vw;
+			top: 8vh;
+			position: absolute;
+			overflow: visible;
+			width: 90vw;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Great Day bold Personal Use';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 0.8em;
+			color: rgba(0,0,0,1);
+			letter-spacing: 2px;
+		}
+	
+		#logo a {
+			color: inherit;
+			text-decoration: none;
+		}
+	
+		#slogan {
+			left: 7vw;
+			top: 0vh;
+			margin-top: 10vh;
+			position: absolute;
+			overflow: visible;
+			width: 508px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Agrandir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 0.8em;
+			color: rgb(0, 0, 0);
+			letter-spacing: 0.8px;
+		}
+		/* Styling for the hamburger icon */
+		.hamburger {
+			display: none;	
+		}
+	
+		.nav-menu {
+			height: 100%;
+			
+		}
+	
+		/* Styling for the menu */
+		.menu-box {
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 20vh;
+			position: absolute;
+			display: flex;
+			justify-items: center;
+			align-items: center;
+		}
+	
+		/* Styling for the menu buttons */
+		.menu_buttons {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+	
+		.menu_buttons li {
+			display: inline-block;
+		}
+	
+		.menu_buttons li a {
+			padding: 15px;
+			color: #000;
+			text-decoration: none;
+			font-family: "Agrandir";
+		}
+	
+		section {
+			height: 100vh;
+			flex: 1; /* distribute available space equally */
+			background-color: #eee; /* optional styling */
+		}
+	
+		#hero {
+			width: 100vw;
+			height: 65vh;
+			overflow: hidden;
+			top: 20vh; /* new vertical position for larger viewports */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	
+		#hero_img {
+			position: relative;
+			width: 100vw;
+			height: 65vh;
+			overflow: hidden;
+		}
+		#rockclimb {
+				width: 290vw;
+				position: relative;
+				right: 90vw;
+				height: 120vh;
+				top: -25vh;	
+			}
+	
+		h1 {
+			position: absolute;
+			font-family: 'Canela';
+			text-align: center;
+			vertical-align: middle;
+			letter-spacing: 5px;
+			z-index: 1;
+			top: 40vh;
+		}
+	
+		section.bio {
+			width: 100vw;
+			height: 90vh;
+			top: 85vh;
+			display: flex;
+			background: linear-gradient(to bottom, #E6E6E6, #8d8d8d);
+		}
+	
+		#title_2 {
+			height: 20vh;
+			width: 50vw;
+			right: 8vw;
+			top:0;
+			position: relative;
+			letter-spacing: 2vh;
+			overflow: visible;
+			white-space: nowrap;
+			text-align: center;
+			z-index: 1;
+			font-family: 'Canela';
+		}
+	
+		h2 {
+			font-family: 'Canela';
+			font-size: 1.5em;
+			
+		}
+	
+		#biotext {
+			min-height: auto;
+			max-height: 40vh;
+			width: 45vw;
+			color: rgba(85,85,85,1);
+			letter-spacing: 0.8px;
+			z-index: 1;
+			word-wrap:break-word;
+			position: relative;
+			right: 45%;
+			top: 27%;
+		}
+	
+		#biotext_p {
+			flex: 1;
+			width: 97%;
+			height: 100%;
+			font-size: 1em;
+		}
+	
+		#biopic {
+			width: 50%;
+			right: 0;
+			height: 90vh;
+			overflow: hidden;
+			position: absolute;
+
+		}	
+		
+		#biopic img{
+		height: 100%;
+		
+		}
+		#bioinfo {
+			display: none;
+		}
+	
+		button.bio_cta {
+				display: inline-block;
+				background-color: black;
+				color: white;
+				padding: 15px 30px;
+				text-decoration: none;
+				border-radius: 5px;
+				position: absolute;
+				height: 8vh;
+				right: 80vw;
+				bottom: -70vh;
+				cursor: pointer;
+				font-family: "Agrandir";
+			  }
+	
+		button.bio_cta:hover {
+				background-color: #333;
+			  }
+	
+	
+		section.testimonios {
+			position: relative;
+			overflow: visible;
+			width: 100vw;
+			height: 100vh;
+			background-color: #C9C9C9;
+			top: 0;
+			display: flex;
+			flex-direction: column;
+	
+		}
+	
+		#title_3{
+			overflow: visible;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Canela';
+			color: rgba(0,0,0,1);
+			text-align: center;
+		}
+	
+		.swiper-container {
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+		}
+	
+		.swiper-wrapper {
+			position: relative;
+			width: 90vw;
+			height: 90vw;
+			
+		  }
+	
+		  .swiper-slide {
+			position: relative;
+			top: 0;
+			width: 90vw;
+			height: 100%;
+			opacity: 1; /* add this line back */
+			transition: opacity 0.5s ease;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		  }
+		  
+		  .swiper-slide.active {
+			position: relative;
+			top: 0;
+			width: 100vw;
+			height: 100%;
+		  }
+		  
+		  .swiper-slide img {
+			max-width: 80vw;
+			max-height: 100%;
+		  }
+	
+		  .swiper-slide.test_name, .swiper-slide.test {
+			padding: 20px;
+			margin: 0;
+			color: #fff;
+			background-color: rgba(0,0,0,0.5);
+			width: 100%;
+		  }
+	
+		  .prev-button, .next-button {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 2em;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		  }
+		  
+		  .prev-button {
+			left: 20px;
+			color: black !important;
+		  }
+		  
+		  .next-button {
+			right: 20px;
+		  }
+		  .swiper-button-next::after {
+			color: black !important;
+		}
+			.swiper-button-prev::after {
+			color: black !important;
+		}
+	
+		  .swiper-pagination {
+			height: 10px;
+			width: 50px;
+		  }
+	
+		  .test_box {
+			background-color: white;
+			height: 50vh;
+			width: 60vh;
+			margin: 2vh auto;
+			bottom: 50vh;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		#test_box_1 {
+			left: 15vw;
+			bottom: 6vh;
+		}
+
+		#test_box_2 {
+			width: 60vh;
+			height: 40vh;
+			right: 10vh;
+			bottom: 10vh;
+		}
+
+		#test_box_3 {
+			width: 60vh;
+			height: 45vh;
+			bottom: 10vh;
+			left: 30vh;
+		}
+	
+		#test_1, #test_2, #test_3 {
+			margin: 5vh auto;
+			width: 75%;
+		}
+	
+		#test_text_1, #test_text_2, #test_text_3 {
+			position: relative;
+			font-family: 'Canela';
+			font-size: 1.8em;
+			top: -10%;
+			text-align: center;
+		  }
+	
+		#test_name_1, #test_name_2, #test_name_3 {
+			position: relative;
+			font-size: 1em;
+			font-family: "Agrandir";
+			text-align: left;
+			width: 80vw;
+			left: 10vw;
+			top: -10%;
+		}
+		#test_img_1  {
+			position: absolute;
+			width: 40vh;
+			top: 0;
+			left: 32%;
+			
+		}
+
+		#test_img_2 {
+			position: absolute;
+			width: 40vh;
+			top: 0;
+			left: 58%;
+		}
+
+		#test_img_3 {
+			position: absolute;
+			width: 40vh;
+			top: 0;
+			left: 35%;
+		}
+	
+		section.servicios {
+			position: relative;
+			width: 100vw;
+			height: 150vh;
+			left: 0px;
+			top: 0;
+			background-image: url("./img/ComponentTMP_0-image.png");
+			overflow: hidden;
+		}
+	
+		#title_4 {
+			white-space: nowrap;
+			font-family: 'Canela';
+			color: rgba(0,0,0,1);
+			text-align: left;
+			margin-left: 5vw;
+			top: 5vw;
+			position: relative;
+		}
+	
+		.box-container {
+			height: 90%;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 10px;
+			align-items: center;
+			justify-content: center;
+			margin: 5vh 0;
+		  }
+		  
+		  .box {
+			width: 30vh;
+			height: 30vh;
+			border: 5px solid black;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 20px; /* or any other value you prefer */
+		  }
+		  
+		  .box:nth-child(5) {
+			grid-column: 1 / 3; /* Span both columns */
+			grid-row: 2; /* Place in the second row */
+		  }
+	
+		  .program {
+			font-family: 'Canela';
+			font-size: 0.7em;
+			float:inline-start;
+			margin: 2vh auto;
+			width: 80%;
+			text-align: center;
+			border-bottom: 1px solid black; /* Set the bottom border to a solid black line */
+			  border-top: none; /* Remove the top border */
+			  border-left: none; /* Remove the left border */
+			 border-right: none; /* Remove the right border */
+		  }
+	
+		  .box a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 10px;
+			background-color: #000;
+			border-radius: 20px;
+		  }
+	
+		.box-container .box button {
+			width: 90%;
+			height: 15%;
+			border-radius: 40px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			cursor: pointer;
+			font-family: "Agrandir";
+			 margin-top: 9vh;
+			top: 8vh; /* adjust the value to position the button as desired */
+			  left: 25%; /* center the button horizontally */
+		  }
+	
+		  button.btn-agendar {
+			font-size: 0.4em;
+			bottom: 5vh;
+		  }
+	
+		  
+		  
+		section.contacto {
+			margin: 0;
+			overflow: visible;
+			width: 100vw;
+			height: 100vh;
+			background-color: #71B9BE;
+		}
+	
+		#title_5 {
+			position: absolute;
+			font-family: 'Canela';
+			color: rgba(0,0,0,1);
+			width: 15vw;
+			height: 15vh;
+			padding-top: 3vh;
+			text-align: left;
+			margin-left: 5vw;
+			border-top: 3px solid black;
+	
+	
+		}
+	
+		form {
+			position: relative;
+			top: 20vh;
+		}
+	
+		.form-group {
+			margin-bottom: 5vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
+		  
+		label {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			pointer-events: none;
+			transition: 0.2s ease all;
+		}
+		  
+		input[type="text"], input[type="email"], textarea {
+			position: relative;
+			border-radius: 30px;
+			border: 1px solid black;
+			width: 90%;
+			padding: 10px;
+			font-size: 16px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			font-family: 'Agrandir', sans-serif;
+			background-color: transparent;
+		}
+		  
+		input::placeholder {
+			font-family: "Agrandir";
+			color: #999;
+			text-indent: 5vw;
+		  }
+	
+		textarea::placeholder {
+			font-family: "Agrandir";
+			color: #999;
+			text-indent: 5vw;
+		}
+		  
+		button[type="submit"] {
+			background-color: #000;
+			color: #fff;
+			border: none;
+			border-radius: 30px;
+			padding: 10px 20px;
+			cursor: pointer;
+			width: 40vw;
+			right: 10vw;
+			position: absolute;
+			font-family: "Agrandir";
+		}
+		  
+		button[type="submit"]:hover {
+			background-color: #424141e9;
+			
+		}
+	
+		  .social-media {
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			position: relative;
+			bottom: 4vh;
+			width: 50%;
+			margin-left: 5vw;
+			top: 30vh;
+		  }
+		  
+		  .social-media a {
+			margin: 0 10px;
+			color: #333;
+			font-size: 24px;
+			width: 3vh;
+			height: 3vh;
+		  }
+	
+		  .icon-facebook, 
+		  
+		  .social-media a:hover {
+			color: #4267b2; /* change the color on hover */
+		  }
+	
+		  p#dev {
+			white-space: nowrap;
+			font-family: "Agrandir";
+			color: rgba(0,0,0,1);
+			text-align: left;
+			margin-left: 6vw;
+			top: 38vh;
+			position: relative;
+		
+		  }
+		
+	
+	}
+
+	@media (max-width:768px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+
+	html {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		min-height: 100vh;
+		height: 100vh;
+		width: 100%;
+		margin: 0;
+		overflow-x: hidden;
+	}
+
+	
+
+	header {
+		background-color: #659FA3;
+		stroke: rgba(112,112,112,1);
+		height: 20vh;
+		width: 100vw;
+		overflow: hidden;
+	}
+
+	#logo {
+		left: 15vw;
+		top: 8vh;
+		position: absolute;
+		overflow: visible;
+		width: 90vw;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'Great Day bold Personal Use';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 0.8em;
+		color: rgba(0,0,0,1);
+		letter-spacing: 2px;
+	}
+
+
+	#logo0 img{
+		width: 40px;
+		margin-top: 6vh;
+		margin-left: 5vw;
+	}
+
+	#logo a {
+		color: inherit;
+        text-decoration: none;
+	}
+
+	#slogan {
+		left: 15vw;
+		top: 10vh;
+		position: absolute;
+		overflow: visible;
+		width: 508px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: "Agrandir";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 0.8em;
+		color: rgb(0, 0, 0);
+		letter-spacing: 0.8px;
+	}
+
+		/* Styling for the hamburger icon */
+		.hamburger {
+			width: 4vh;
+			height: 6vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			position: absolute;
+			right: 4vh;
+			top: 7vh;
+			z-index: 2;
+		  }
+		  
+		  .line {
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			transition: transform 0.3s ease;
+			margin-bottom: 8px;
+		  }
+		  
+		  .line.active:nth-child(2) {
+			transform: scale(0);
+			background-color: #fff;
+		  }
+		  
+		  .line.active:nth-child(1) {
+			transform: translateY(10px) rotate(45deg);
+			background-color: #fff;
+		  }
+		  
+		  .line.active:nth-child(3) {
+			transform: translateY(-10px) rotate(-45deg);
+			background-color: #fff;
+		  }
+		  
+		.nav-menu {
+			height: 100%;
+			
+		}
+
+	/* Styling for the menu */
+	.nav-menu .menu-box {
+		position: fixed;
+		top: -10vh;
+		width: 100%;
+		height: 100vh;
+		opacity: 0;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+		z-index: 0;
+		transform: translateY(-20px);
+		transition: all 0.8s ease;
+	  }
+
+	  .nav-menu .menu-box.slide-in {
+		opacity: 1;
+		transform: translateY(10vh);
+		z-index: 1;
+	  }
+	  
+
+	/* Styling for the menu buttons */
+	.menu_buttons {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		top: 10vh;
+		width: 50%;
+		height: 80%;
+	}
+
+	.menu_buttons li {
+		display: list-item;
+		margin-top: 10vh;
+		margin-left: 5vh;
+	}
+
+	.menu_buttons li a {
+		padding: 15px;
+		color: #000;
+		text-decoration: none;
+		font-family: "Agrandir";
+		color:#fff;
+	}
+
+
+	
+	section {
+		height: 100vh;
+		flex: 1; /* distribute available space equally */
+		background-color: #eee; /* optional styling */
+		}
+
+	#hero {
+		width: 100vw;
+		height: 65vh;
+		overflow: hidden;
+		top: 30vh; /* default vertical position */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	 	}
+	  
+	  #hero_img {
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;	
+		left: 0;
+		right: 0;
+		}
+	  
+	  #rockclimb {
+		width: 290%;
+		position: relative;
+		right: 50%;
+		transform: translateX(-15%);
+		
+	  	}
+	  
+
+	h1 {
+		position: absolute;
+		font-family: 'Canela';
+		text-align: center;
+		vertical-align: middle;
+		letter-spacing: 5px;
+		z-index: 1;
+		top: 40vh;
+		}
+
+	section.bio {
+		width: 100vw;
+		height: 130vh;
+		top: 85vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: linear-gradient(to bottom, #E6E6E6, #8d8d8d);
+		}
+
+	h2 {
+		font-family: 'Canela';
+		font-size: 1.5em;
+		}
+
+
+	#title_2 {
+		height: 20vh;
+		width: 60vw;
+		position: relative;
+		padding-top: 10px;
+		letter-spacing: 2vh;
+		overflow: visible;
+		white-space: nowrap;
+		text-align: left;
+		text-align: center;
+		z-index: 1;
+		font-family: 'Canela';
+		opacity: 0;
+		transform: translateX(-20px);
+		}
+
+	#biotext {
+		margin: 0 2vh;
+		min-height: auto;
+		width: 90vw;
+		color: rgba(85,85,85,1);
+		letter-spacing: 0.8px;
+		z-index: 1;
+		word-wrap:break-word;
+		position: relative;
+		opacity: 0;
+		transition: opacity 0.5s;
+		line-height: 1.5;
+		}
+
+	#biotext_p {
+		flex: 1;
+		width: 97%;
+		height: 100%;
+		font-size: 1em;
+		}
+
+	.bio.animated #title_2,
+	.bio.animated #biotext {
+	opacity: 1;
+	transform: none;
+	transform: translateX(0px);
+	transition: opacity 0.4s, transform 0.4s;
+}
+
+
+
+	#biopic {
+		margin-top: 5vh;
+		margin: 0 auto;
+		width: 100%;
+		height: 60vh;
+		overflow: hidden;
+		text-align: center;
+		position: relative;
+	}		
+
+	#biopicimg {
+		position: relative;
+		min-height: 10%;
+		width: 150%;
+		left: -30vw;
+		bottom: 10vh;
+	}
+	#bioinfo {
+		height: 20vh;
+		width: 30vw;
+		left: 18vh;
+		bottom: -70vh;
+		position: absolute;
+		display: none;
+		overflow: hidden;
+	}
+
+	button.bio_cta {
+			display: inline-block;
+			background-color: black;
+			color: white;
+			padding: 15px 30px;
+			text-decoration: none;
+			border-radius: 5px;
+			margin-top: 5vh;
+			margin-bottom: 5vh;
+			cursor: pointer;
+			font-family: "Agrandir";
+		  }
+
+	button.bio_cta:hover {
+			background-color: #333;
+		  }
+
+		section.quote {
+		height: 40vh;
+		background-color: #515153;
+		}
+
+		section.quote h2 {
+		color: #f7f7f7;
+		position: relative;
+		text-align: center;
+		top: 6vh;
+		  }
+
+	section.testimonios {
+		position: relative;
+		overflow: visible;
+		width: 100vw;
+		height: 100vh;
+		background-color: #C9C9C9;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	#title_3{
+		overflow: visible;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'Canela';
+		color: rgba(0,0,0,1);
+		text-align: center;
+	}
+
+	.swiper-container {
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.swiper-wrapper {
+		position: relative;
+		width: 90vw;
+		height: 90vw;
+		
+	  }
+
+	  .swiper-slide {
+		position: relative;
+		top: 0;
+		width: 90vw;
+		height: 100%;
+		opacity: 1; /* add this line back */
+		transition: opacity 0.5s ease;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	  }
+	  
+	  .swiper-slide.active {
+		position: relative;
+		top: 0;
+		width: 100vw;
+		height: 100%;
+		left: 0;
+	  }
+	  
+	  .swiper-slide img {
+		max-width: 80vw;
+		max-height: 100%;
+	  }
+
+	  .swiper-slide.test_name, .swiper-slide.test {
+		padding: 20px;
+		margin: 0;
+		color: #fff;
+		background-color: rgba(0,0,0,0.5);
+		width: 100%;
+	  }
+
+	  .prev-button, .next-button {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 2em;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	  }
+	  
+	  .prev-button {
+		left: 20px;
+		color: black !important;
+	  }
+	  
+	  .next-button {
+		right: 20px;
+	  }
+	  .swiper-button-next::after {
+		color: black !important;
+	}
+		.swiper-button-prev::after {
+		color: black !important;
+	}
+
+	.swiper-pagination {
+		height: 10px;
+		width: 50px;
+	  }
+
+	  .test_box {
+		background-color: white;
+		height: 50vh;
+		width: 60vh;
+		margin: 2vh auto;
+		bottom: 50vh;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#test_box_1 {
+		width: 60vh;
+		height: 40vh;
+		bottom: -45vh;
+		z-index: 1;
+		position: absolute;
+	}
+
+	#test_box_2 {
+		width: 60vh;
+		height: 40vh;
+		bottom: -45vh;
+		z-index: 1;
+		position: absolute;
+	}
+
+	#test_box_3 {
+		width: 60vh;
+		height: 40vh;
+		bottom: -45vh;
+		z-index: 1;
+		position: absolute;
+	}
+
+	#test_1, #test_2, #test_3 {
+		margin: 5vh auto;
+		width: 75%;
+	}
+
+	#test_text_1, #test_text_2, #test_text_3 {
+		position: relative;
+		font-family: 'Canela';
+		font-size: 1.8em;
+		top: -10%;
+		text-align: center;
+	  }
+
+	#test_name_1, #test_name_2, #test_name_3 {
+		position: relative;
+		font-size: 1em;
+		font-family: "Agrandir";
+		text-align: left;
+		width: 80vw;
+		left: 10vw;
+		top: -10%;
+	}
+	#test_img_1  {
+		position: absolute;
+		width: 40vh;
+		top: 0;
+	}
+
+	#test_img_2 {
+		position: absolute;
+		width: 40vh;
+		top: 0;
+	}
+
+	#test_img_3 {
+		position: absolute;
+		width: 40vh;
+		top: 0;
+	}
+
+	section.servicios {
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		left: 0px;
+		top: 0;
+		background-image: url("./img/ComponentTMP_0-image.png");
+		overflow: hidden;
+	}
+
+	#title_4 {
+		white-space: nowrap;
+		font-family: 'Canela';
+		font-size: 2em;
+		color: rgba(0,0,0,1);
+		text-align: left;
+		margin-left: 5vw;
+		top: 10vw;
+		position: relative;
+	}
+
+	.box-container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		margin: 5vh 0;
+		height: 60vh; /* Set a fixed height for the container */
+		overflow-y: scroll; /* Enable vertical scrolling */
+		top: 20vh;
+	  }
+	  
+	  .box {
+		flex-shrink: 0;
+		width: 100vw;
+		height: 40vh;
+		background-color: rgba(205, 205, 205, 0.6);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		scroll-snap-align: start;
+		border-top: 1px solid black; /* Set the top border style */
+		border-right: none; /* Remove the right border */
+		border-bottom: none; /* Remove the bottom border */
+		border-left: none; /* Remove the left border */
+	  }
+	  
+	  .box-content {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	  }
+	  
+	  .box-container:hover .box {
+		transform: translateY(-50%);
+	  }
+	  
+	  .program {
+		font-family: 'Canela';
+		font-size: 1.5em;
+		float: inline-start;
+		margin: 2vh auto;
+		width: 80%;
+		text-align: left;
+	  }
+
+	  .box a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 16px;
+		padding: 10px;
+		background-color: #000;
+		border-radius: 20px;
+	  }
+
+	.box-container .box button {
+		width: 20%;
+		height: 15%;
+		border-radius: 40px;
+		background-color: black;
+		color: white;
+		text-align: center;
+		cursor: pointer;
+		font-family: "Agrandir";
+ 		margin-top: 9vh;
+		top: 40vh; /* adjust the value to position the button as desired */
+  		left: 25%; /* center the button horizontally */
+	  }
+
+	  button.btn-agendar {
+		font-size: 0.4em;
+		bottom: 5vh;
+		top: 30vh;
+	  }
+
+	  
+	  
+	section.contacto {
+		margin: 0;
+		overflow: visible;
+		width: 100vw;
+		height: 100vh;
+		background-color: #71B9BE;
+	}
+
+	#title_5 {
+		position: absolute;
+		font-family: 'Canela';
+		color: rgba(0,0,0,1);
+		width: 15vw;
+		height: 15vh;
+		padding-top: 3vh;
+		text-align: left;
+		margin-left: 5vw;
+		border-top: 3px solid black;
+	}
+
+	form {
+		position: relative;
+		top: 20vh;
+	}
+
+	.form-group {
+		margin-bottom: 5vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	  
+	label {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		pointer-events: none;
+		transition: 0.2s ease all;
+	}
+	  
+	input[type="text"], input[type="email"], textarea {
+		position: relative;
+		border-radius: 30px;
+		border: 1px solid black;
+		width: 90%;
+		padding: 10px;
+		font-size: 16px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		font-family: "Agrandir";;
+		background-color: transparent;
+	}
+	  
+	input::placeholder {
+		font-family: "Agrandir";
+		color: #999;
+		text-indent: 5vw;
+	  }
+
+	textarea::placeholder {
+		font-family: "Agrandir";
+		color: #999;
+		text-indent: 5vw;
+	}
+	  
+	button[type="submit"] {
+		background-color: #000;
+		color: #fff;
+		border: none;
+		border-radius: 30px;
+		padding: 10px 20px;
+		cursor: pointer;
+		width: 40vw;
+		right: 10vw;
+		position: absolute;
+		font-family: "Agrandir";
+	}
+	  
+	button[type="submit"]:hover {
+		background-color: #424141e9;
+		
+	}
+
+	  .social-media {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		position: relative;
+		bottom: 4vh;
+		width: 90%;
+		margin-left: 3vw;
+		top: 30vh;
+	  }
+	  
+	  .social-media a {
+		margin: 0 10px;
+		color: #333;
+		font-size: 24px;
+		width: 3vh;
+		height: 3vh;
+	  }
+
+	  .icon-facebook, 
+	  
+	  .social-media a:hover {
+		color: #4267b2; /* change the color on hover */
+	  }
+
+	  footer {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		margin-left: 4.5vw;
+		margin-top: 35vh;
+	  }
+
+	  #dev span {
+		position: absolute;
+		left: 3vh;
+		top: 8vh;
+		transition: transform 0.5s ease;
+		opacity: 1;
+		font-family: "Agrandir";
+	  }
+
+	  #dev {
+		position: relative;
+		cursor: pointer;
+		width: 100%;
+		
+	  }
+	  
+	  #dev #dev_text {
+		opacity: 0;
+		width: 100%;
+		font-family: "Agrandir";
+	  }
+	  
+	  #dev:active #dev_text {
+		transform: translateX(10%);
+		opacity: 1;
+		transition: opacity 0.5s ease, transform 1s ease;
+	  }
+	  
+	
+
+	}
+
+

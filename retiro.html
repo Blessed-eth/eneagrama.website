@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./retiroStyles.css">
+  
+  <title>Eneagrama Fanny Torres Silva</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="logo0">
+      <a href='index.html'> <img  src="./img/hummingbird (2).png"/></a>
+    </div>
+    <span id="logo">
+      <a href="index.html">
+        <span>Fanny Torres Silva</span>
+      </a>
+    </span>
+  
+    <div id="slogan">
+      <span>Maestra de Eneagrama</span>
+    </div>
+  
+    <nav class="nav-menu">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div id="line-1" class="line"></div>
+        <div id="line-2" class="line"></div>
+        <div id="line-3" class="line"></div>
+      </div>
+      <div class="menu-box">
+        <ul class="menu_buttons">
+            <li><a href="index.html#sec-servicios">Servicios</a></li>
+          <li><a href="material.html">Material</a></li>
+          <li><a href="#sec-contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <section class="service">
+        <h2>Retiro de Eneagrama</h2>
+        <img id="retiropic" src="./img/IMG_4867.JPG"/>
+        
+        <p id="serviceText">El retiro de eneagrama es una instancia maravillosa para quienes quieren 
+          aprender esta técnica, método y camino espiritual . No es necesario saber de eneagrama. 
+          El retiro incluye alojamiento y comida, y el trabajo siempre rodeado de árboles, pájaros y 
+          las maravillas que regala la naturaleza. Se realizan ejercicios asociados a eneagrama en grupo, 
+          en parejas o solitario, se utilizan otros recursos de apoyo para el trabajo de taller. 
+          Los retiros son una instancia de aprendizaje pensados para el cuerpo, mente y alma. Se entra a 
+          la hora de almuerzo del día viernes y termina el día domingo después de la cena.
+            </p>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPG0QvY9NJRXR1OHjnd_JKCp4aefDnvqjDvoHPzKDk3nuxyw/viewform?usp=sf_link" onclick="openFormPopup(); return false;" class="btn">Inscribirme</a>
+        
+        <script>
+          function openFormPopup() {
+            window.open("https://docs.google.com/forms/d/e/1FAIpQLSfPG0QvY9NJRXR1OHjnd_JKCp4aefDnvqjDvoHPzKDk3nuxyw/viewform?usp=sf_link", "FormPopup", "width=600, height=600");
+          }
+        </script>
+
+            <div id="icon-description">
+              <div id="Formato" class="icon-container">
+                  <img id="FormatoIcon" src="./img/icons/desktop-solid.svg" alt="Computer Icon">
+                  <h3>Formato Online</h3>
+                  <p>Taller via Zoom</p>
+              </div>
+                          
+              <div id="Contenido" class="icon-container">
+                <img id="ContenidoIcon" src="./img/icons/book-solid.svg" alt="Book Icon">
+                <h3>Contenido</h3>
+                  <p>Fundamentos <br> Utilidad y Test</p>
+              </div>
+              
+              <div id="Duracion" class="icon-container">
+                <img id="DuracionIcon" src="./img/icons/hourglass-half-solid.svg" alt="Hourglass Icon">
+                <h3>Duracion</h3>
+                  <p>2 jornadas<br>3 horas totales</p>
+              </div>
+
+
+
+      
+    </section>
+      
+
+ 
+
+  <section class="contacto" id="sec-contacto">
+    <h2 id="title_5">Contacto</h2>
+  
+    <form id="contact-form" method="post" action="https://formspree.io/f/myyaogly">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Nombre" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    
+    <script>
+      const form = document.getElementById('contact-form');
+    
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        fetch(event.target.action, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: new FormData(event.target)
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Show pop-up message
+          alert('Gracias por tu mensaje! Nos pondremos en contacto contigo en breve.');
+    
+          // Wait a few seconds before redirecting to home page
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 3000);
+        })
+        .catch(error => {
+          console.error('There was a problem submitting the form:', error);
+        });
+      });
+    </script>
+    
+  
+    <div class="social-media">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/fanny.torres.silva/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  
+    <footer>
+      <p id="dev">
+        <a href="https://blessed-eth.github.io/blessed.github.io/" target="_blank">
+          <span>©</span>
+        </a> 
+        <span id="dev_text">2023 blessd.eth</span>
+      </p>
+    </footer>
+  </section>
+  
+  <script src="app.js"></script>
+  
+
+</body>
+</html>

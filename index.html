@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Swiper CSS file -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Eneagrama Fanny Torres Silva</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="logo0">
+      <a href='index.html'> <img  src="./img/hummingbird (2).png"/></a>
+    </div>
+    <span id="logo">
+      <a href="">
+        <span>Fanny Torres Silva</span>
+      </a>
+    </span>
+  
+    <div id="slogan">
+      <span>Maestra de Eneagrama</span>
+    </div>
+  
+    <nav class="nav-menu">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div id="line-1" class="line"></div>
+        <div id="line-2" class="line"></div>
+        <div id="line-3" class="line"></div>
+      </div>
+      <div class="menu-box">
+        <ul class="menu_buttons">
+          <li><a href="#sec-servicios">Servicios</a></li>
+          <li><a href="material.html">Material</a></li>
+          <li><a href="#sec-contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1 id="title">ENEAGRAMA</h1>
+  
+    <div id="hero_img">
+      <video id="rockclimb" playsinline autoplay muted loop>
+        <source src="./video/file.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <section class="bio">
+    <div id="title_2" class="fade move">
+      <h2>SOBRE <br/>FANNY</h2>
+    </div>
+  
+    <div id="biotext" class="fade move">
+      <p id= "biotext_p">Fanny Torres Silva, docente con formación en Chile e Inglaterra 
+        desarrolló la enseñanza del Eneagrama en un programa de 5 pasos que tiene como 
+        objetivo el uso de esta herramienta milenaria de transformación en nuestra vida 
+        diaria y en el desempeño de nuestras labores.</p>
+    </div>
+
+  
+    <div id="biopic">
+      <img id="biopicimg" src="./img/WhatsApp Image 2023-05-12 at 11.40.05.jpeg" alt="Fanny bio pic" />
+    </div>
+  <div id="bioinfo">
+    <img id="bioinfopic" src="./img/Group 2.png">
+  </div>
+    <button class="bio_cta">Contacto</button>
+  </section>
+
+  <section class="quote">
+    <h2>
+      “ Lo mejor que puedes hacer por 
+los demás no es enseñarles tus riquezas, 
+sino hacerles ver la suya propia.”
+    </h2>
+    <h2>~Goethe~</h2>
+
+
+  </section>
+
+  <section class="testimonios">
+    <h2 id="title_3">TESTIMONIOS</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img id="test_img_1" src="./img/test_img_1.png" alt="testimonio victoria" />
+          <div class="test_box" id="test_box_1">
+            <div class="test" id="test_1">
+              <span id="test_text_1">
+                “El retiro de eneagrama es un trabajo maravilloso que realizamos con nosotras mismas.”
+              </span>
+            </div>
+            <div class="test_name" id="test_name_1">
+              <span>Victoria, Retiro 2023</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide">
+          <img id="test_img_2" src="./img/test_img_2.png" alt="testimonio Isabel" />
+          <div class="test_box" id="test_box_2">
+            <div class="test" id="test_2">
+              <span id="test_text_2">
+                “Un grupo muy potente, el retiro ha sido un tremendo regalo en mi vida.”
+              </span>
+            </div>
+            <div class="test_name" id="test_name_2">
+              <span>Isabel García, Retiro 2023</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide">
+          <img id="test_img_3" src="./img/test_img_3.png" alt="testimonio Melina" />
+          <div class="test_box" id="test_box_3">
+            <div class="test" id="test_3">
+              <span id="test_text_3">
+                "Si tienes la oportunidad y quieres hacerte un regalo, realiza un retiro de eneagrama."
+              </span>
+            </div>
+            <div class="test_name" id="test_name_3">
+              <span>Melina Gambin, Retiro 2023</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add more slides here -->
+  
+      </div>
+  
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="servicios" id="sec-servicios">
+    <h2 id="title_4">Cómo puedo ayudarte?</h2>
+    <div class="box-container">
+      
+      <div class="box">
+        <div class="program">Introducción al Eneagrama</div>
+        <button onclick="window.location.href = './intro.html'" class="btn-agendar">Más info</button>
+      </div>
+
+      <div class="box">
+        <div id="box2" class="program">Eneagrama para empresas</div>
+        <button onclick="window.location.href = './empresas.html'" class="btn-agendar">Más info</button>
+      </div>
+
+      <div class="box">
+        <div class="program">Retiro de Eneagrama</div>
+        <button onclick="window.location.href = './retiro.html'" class="btn-agendar">Más info</button>
+      </div>
+
+      <div class="box">  
+        <div class="program">Eneagrama para Docentes</div>
+        <button onclick="window.location.href = './docentes.html'"  class="btn-agendar">Más info</button>
+      </div>
+
+      <div class="box">
+        <div class="program">Group Coaching</div>
+        <button onclick="window.location.href = './group.html'" class="btn-agendar">Más info</button>
+      </div>
+    
+    </div>
+  </section>
+
+  
+
+  <section class="contacto" id="sec-contacto">
+    <h2 id="title_5">Contacto</h2>
+  
+    <form id="contact-form" method="post" action="https://formspree.io/f/myyaogly">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Nombre" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    
+    <script>
+      const form = document.getElementById('contact-form');
+    
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        fetch(event.target.action, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: new FormData(event.target)
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Show pop-up message
+          alert('Gracias por tu mensaje! Nos pondremos en contacto contigo en breve.');
+    
+          // Wait a few seconds before redirecting to home page
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 3000);
+        })
+        .catch(error => {
+          console.error('There was a problem submitting the form:', error);
+        });
+      });
+    </script>
+    
+  
+    <div class="social-media">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/fanny.torres.silva/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  
+    <footer>
+      <p id="dev">
+        <a href="https://blessed-eth.github.io/blessed.github.io/" target="_blank">
+          <span>©</span>
+        </a> 
+        <span id="dev_text">2023 blessd.eth</span>
+      </p>
+    </footer>
+  </section>
+  
+  <script src="app.js"></script>
+  <!-- Swiper JavaScript file -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1084 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+	border: none;	
+}
+
+@font-face {
+	font-family: 'Canela', 'GreatDayBold', 'Agrandir';
+	src: url('./fonts/FontsFree-Net-Canela-Regular.ttf') format('truetype'),
+	 	 url('./fonts/Great Day bold Personal Use') format('truetype'),
+		 url('./fonts/Agrandir-Regular') format('truetype');
+	font-display: auto; /* or auto, fallback, optional */
+  }  
+
+	/* hi-res laptops and desktops */ 
+	@media (min-width:1024px) {
+
+		html {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			scroll-behavior: smooth;
+		}
+		
+		body {
+			min-height: 100vh;
+			height: 100vh;
+			width: 100%;
+			margin: 0;
+			overflow-x: hidden;
+		}
+	
+		header {
+			background-color: #659FA3;
+			stroke: rgba(112,112,112,1);
+			height: 20vh;
+			width: 100vw;
+			overflow: hidden;
+			margin-bottom: -3vh;
+		}
+	
+		#logo0 img{
+			width: 40px;
+			margin-top: 8vh;
+			margin-left: 3vw;
+		}
+	
+		#logo {
+			left: 7vw;
+			top: 8vh;
+			position: absolute;
+			overflow: visible;
+			width: 90vw;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Great Day bold Personal Use';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.5em;
+			color: rgba(0,0,0,1);
+			letter-spacing: 2px;
+		}
+	
+		#logo a {
+			color: inherit;
+			text-decoration: none;
+		}
+	
+		#slogan {
+			left: 7vw;
+			top: 13vh;
+			position: absolute;
+			overflow: visible;
+			width: 508px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Agrandir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1em;
+			color: rgb(0, 0, 0);
+			letter-spacing: 0.8px;
+		}
+		/* Styling for the hamburger icon */
+		.hamburger {
+			display: none;	
+		}
+	
+		.nav-menu {
+			height: 100%;
+		}
+	
+		/* Styling for the menu */
+		.menu-box {
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 20vh;
+			position: absolute;
+			display: flex;
+			justify-items: center;
+			align-items: center;
+		}
+	
+		/* Styling for the menu buttons */
+		.menu_buttons {
+			list-style: none;
+			left: 30vw;
+			margin-left: 6vw;
+		}
+	
+		.menu_buttons li {
+			display: inline-block;
+			margin-left: 5vw;
+			
+		}
+	
+		.menu_buttons li a {
+			padding: 15px;
+			color: #000;
+			text-decoration: none;
+			font-family: 'Agrandir';
+			font-size: 1.2em;
+		}
+	
+	
+		section {
+			height: 100vh;
+			flex: 1; /* distribute available space equally */
+			background-color: #eee; /* optional styling */
+		}
+	
+	
+		section.programas {
+			position: relative;
+			width: 100vw;
+			height: 180vh;
+			left: 0px;
+			top: 0;
+			background-image: url("img/ComponentTMP_0-image.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			border: none;
+		}
+		
+		#title_4 {
+			white-space: nowrap;
+			font-family: 'Canela';
+			font-size: 2em;
+			color: rgba(0,0,0,1);
+			text-align: left;
+			margin-left: 5vw;
+			height: 20vh;
+			padding-top: 5vh;
+			position: absolute;
+		}
+		
+		.box-container {
+			position: relative;
+			display: flex;
+			top: 30vh;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin: 0 8vw;
+			width: 100vw;
+			height: 120vh;
+			margin-left: 0;
+			border: 3px solid red;
+			
+		  }
+		  
+		  .box {
+			width: 30vw;
+			height: 40vh;
+			margin: 2vh 4vw;
+			display: flex;
+			flex-direction: column;
+			left: 10vw;
+			border-radius: 40px;
+			z-index: 1;
+			position: relative;
+			transition: all 0.7s ease-in-out;
+			overflow: hidden;
+			
+		  }
+		  
+		  #box1 {
+			position: absolute;
+			top: 0;
+			left: 10vh;
+			border: 3px solid black;
+		  }
+
+		  #box1_text {
+		
+			
+		  }
+	
+		  #box1.expanded {
+			position: fixed;
+			top: 50vh;
+			left: 35vw;
+			transform: translate(-50%, -50%);
+			/* add any additional styles as needed */
+		  }
+		  
+		  #box2 {
+			position: absolute;
+			top: 20vh;
+			left: 70vh;
+			display: none;
+		  }
+	
+		  #box2.expanded {
+			position: fixed;
+			top: 50vh;
+			left: 35vw;
+			transform: translate(-50%, -50%);
+			/* add any additional styles as needed */
+		  }
+		  
+		  #box3 {
+			position: absolute;
+			top: 40vh;
+			left: 130vh;
+			display: none;
+		  }
+	
+		  #box3.expanded {
+			position: fixed;
+			top: 50vh;
+			left: 35vw;
+			transform: translate(-50%, -50%);
+			/* add any additional styles as needed */
+		  }
+		  
+		  #box4 {
+			position: absolute;
+			top: 60vh;
+			left: 30vh;
+			display: none;
+		  }
+	
+		  #box4.expanded {
+			position: fixed;
+			top: 50vh;
+			left: 35vw;
+			transform: translate(-50%, -50%);
+			/* add any additional styles as needed */
+		  }
+		  
+		  #box5 {
+			position: absolute;
+			top: 90vh;
+			left: 100vh;
+			display: none;
+		  }
+	
+		  #box5.expanded {
+			position: fixed;
+			top: 50vh;
+			left: 35vw;
+			transform: translate(-50%, -50%);
+			/* add any additional styles as needed */
+		  }
+		  
+		  .box.expanded {
+			width: 80vw;
+			height: 80vh;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			margin-left: 15vw;
+			z-index: 2;
+			background-color: #B5D8D4;
+			align-items: center;
+		  
+			/* add <p> tag */
+			& > p {
+			  font-size: 1.2em;
+			  margin: 10px 0;
+			}
+		  
+			/* add <img> tag */
+			& > img {
+			  width: 100%;
+			  height: auto;
+			  margin-bottom: 10px;
+			}
+		  
+			/* add button styling */
+			& button {
+				position: absolute;
+				bottom: 5%;
+				transform: translateX(135%);
+				font-family: 'Agrandir';
+			  }
+			}
+		  
+		  
+		  .box.expanded.centered {
+			width: 80vh;
+			height: 80vh;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			background-color: rgba(255, 255, 255);
+			justify-content: center;
+		  }
+		  
+		  .box:not(.expanded) {
+			opacity: 1;
+		  }
+		  
+		  body.box-expanded .box:not(.expanded) {
+			opacity: 0.3;
+			pointer-events: none;
+		  }
+		  
+		  body.no-hover .box.non-hoverable:hover {
+			cursor: default;
+			opacity: 1;
+		  }
+		  
+		  body.box-expanded {
+			overflow: hidden;
+		  }
+	
+	
+		  .program {
+			font-family: 'Canela';
+			font-size: 1.5em;
+			margin: 1vw 0;
+			margin-left: 5vh;
+			width: 80%;
+			text-align: center;
+			border-bottom: 1px solid black; /* Set the bottom border to a solid black line */
+		  }
+	
+		  .box a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			background-color: #000;
+			border-radius: 20px;
+		  }
+	
+			.box-container .box button {
+				width: 150px;
+				height: 40px;
+				border-radius: 40px;
+				background-color: black;
+				color: white;
+				text-align: center;
+				cursor: pointer;
+				font-family: 'Agrandir';
+				margin-top: 20vh;
+				top: 8vh; /* adjust the value to position the button as desired */
+				left: 25%; /* center the button horizontally */
+				display: none;
+			}
+	
+		  button.btn-agendar {
+			font-size: 0.4em;
+			bottom: 5vh;
+		  }
+	
+		  .box.expanded button {
+			margin-top: 50vh;
+		  }
+	
+		  p#dev {
+			white-space: nowrap;
+			font-family: 'Agrandir';
+			color: rgba(0,0,0,1);
+			text-align: left;
+			margin-left: 6vw;
+			top: 170vh;
+			position: absolute;
+			cursor: pointer;
+		  }
+	
+		  #dev span {
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: transform 0.5s ease;
+			opacity: 1;
+			font-family: 'Agrandir';
+		  }
+	
+		  #dev a:visited {
+			color: black;
+		  }
+	
+		  #dev {
+			position: relative;
+			cursor: pointer;
+		  }
+		  
+		  #dev #dev_text {
+			opacity: 0;
+	
+		  }
+		  
+		  #dev:hover #dev_text {
+			transform: translateX(15%);
+			opacity: 1;
+			transition: opacity 0.5s ease, transform 0.5s ease;
+		  }
+		  
+		  #dev:hover p {
+			opacity: 0;
+			transition: opacity 0.5s ease, transform 0.5s ease;
+			transform: translateX(-100%);
+		  }
+	}
+
+	@media (min-width:768px) and (max-width: 1024px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+		html {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			scroll-behavior: smooth;
+		  }
+		  
+		  body {
+			min-height: 100vh;
+			height: 100vh;
+			width: 100%;
+			margin: 0;
+			overflow-x: hidden;
+		  }
+	
+		
+	
+		header {
+			background-color: rgba(244,244,244,1);
+			stroke: rgba(112,112,112,1);
+			height: 40vh;
+			width: 100vw;
+			overflow: hidden;
+		}
+	
+		#logo {
+			left: 5vw;
+			top: 8vh;
+			position: absolute;
+			overflow: visible;
+			width: 90vw;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Canela';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.5em;
+			color: rgba(0,0,0,1);
+			letter-spacing: 2px;
+		}
+	
+		#logo a {
+			color: inherit;
+			text-decoration: none;
+		}
+	
+		#slogan {
+			left: 5vw;
+			top: 13vh;
+			position: absolute;
+			overflow: visible;
+			width: 508px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: 'Agrandir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1em;
+			color: rgb(0, 0, 0);
+			letter-spacing: 0.8px;
+		}
+	/* Styling for the hamburger icon */
+	.hamburger {
+		display: none;	
+	  }
+	
+	.nav-menu {
+		height: 100%;
+		
+	}
+	
+	/* Styling for the menu */
+	.menu-box {
+		top: 0;
+		right: 0;
+		width: 50%;
+		height: 20vh;
+		position: absolute;
+		display: flex;
+		justify-items: center;
+		align-items: center;
+	}
+	
+	/* Styling for the menu buttons */
+	.menu_buttons {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	.menu_buttons li {
+		display: inline-block;
+	}
+	
+	.menu_buttons li a {
+		padding: 15px;
+		color: #000;
+		text-decoration: none;
+		font-family: 'Agrandir';
+	}
+	
+		section {
+			height: 100vh;
+			flex: 1; /* distribute available space equally */
+			background-color: #eee; /* optional styling */
+		}
+	
+		#hero {
+			width: 100vw;
+			height: 65vh;
+			overflow: hidden;
+			top: 20vh; /* new vertical position for larger viewports */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	
+		#hero_img {
+			position: relative;
+			width: 100vw;
+			height: 65vh;
+			overflow: hidden;
+		}
+		#rockclimb {
+				width: 290vw;
+				position: relative;
+				right: 90vw;
+				height: 120vh;
+				top: -25vh;
+				
+			}
+	
+		h1 {
+			position: absolute;
+			font-family: 'Agrandir';
+			text-align: center;
+			vertical-align: middle;
+			letter-spacing: 5px;
+			z-index: 1;
+			top: 40vh;
+		}
+	
+	
+	
+		section.programas {
+			position: relative;
+			width: 100vw;
+			height: 150vh;
+			left: 0px;
+			top: 0;
+			background-image: url("img/ComponentTMP_0-image.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	
+		#title_4 {
+			white-space: nowrap;
+			font-family: 'Canela';
+			color: rgba(0,0,0,1);
+			text-align: left;
+			margin-left: 5vw;
+			top: 5vw;
+			position: relative;
+		}
+	
+		.box-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 5vh 0;
+		  }
+		  
+		  .box {
+			width: 30vh;
+			height: 30vh;
+			border: 5px solid black;
+			margin: 2.5vh 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		  }
+	
+		  .program {
+			font-family: 'Canela';
+			font-size: 0.7em;
+			float:inline-start;
+			margin: 2vh auto;
+			width: 80%;
+			text-align: center;
+			border-bottom: 1px solid black; /* Set the bottom border to a solid black line */
+			  border-top: none; /* Remove the top border */
+			  border-left: none; /* Remove the left border */
+			 border-right: none; /* Remove the right border */
+		  }
+	
+		  .box a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 10px;
+			background-color: #000;
+			border-radius: 20px;
+		  }
+	
+		.box-container .box button {
+			width: 90%;
+			height: 15%;
+			border-radius: 40px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			cursor: pointer;
+			font-family: 'Agrandir';
+			 margin-top: 9vh;
+			top: 8vh; /* adjust the value to position the button as desired */
+			  left: 25%; /* center the button horizontally */
+		  }
+	
+		  button.btn-agendar {
+			font-size: 0.4em;
+			bottom: 5vh;
+		  }
+	
+		  
+		  
+		section.contacto {
+			margin: 0;
+			overflow: visible;
+			width: 100vw;
+			height: 100vh;
+			background-color: #71B9BE;
+		}
+	
+		#title_5 {
+			position: absolute;
+			font-family: 'Canela';
+			color: rgba(0,0,0,1);
+			width: 15vw;
+			height: 15vh;
+			padding-top: 3vh;
+			text-align: left;
+			margin-left: 5vw;
+			border-top: 3px solid black;
+	
+	
+		}
+	
+		form {
+			position: relative;
+			top: 20vh;
+		}
+	
+		.form-group {
+			margin-bottom: 5vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
+		  
+		label {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			pointer-events: none;
+			transition: 0.2s ease all;
+		}
+		  
+		input[type="text"], input[type="email"], textarea {
+			position: relative;
+			border-radius: 30px;
+			border: 1px solid black;
+			width: 90%;
+			padding: 10px;
+			font-size: 16px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			font-family: 'Agrandir';
+			background-color: transparent;
+		}
+		  
+		input::placeholder {
+			font-family: 'Agrandir';
+			color: #999;
+			text-indent: 5vw;
+		  }
+	
+		textarea::placeholder {
+			font-family: 'Agrandir';
+			color: #999;
+			text-indent: 5vw;
+		}
+		  
+		button[type="submit"] {
+			background-color: #000;
+			color: #fff;
+			border: none;
+			border-radius: 30px;
+			padding: 10px 20px;
+			cursor: pointer;
+			width: 40vw;
+			right: 10vw;
+			position: absolute;
+		}
+		  
+		button[type="submit"]:hover {
+			background-color: #424141e9;
+			
+		}
+	
+		  .social-media {
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			position: relative;
+			bottom: 4vh;
+			width: 90%;
+			margin-left: 5vw;
+			top: 30vh;
+		  }
+		  
+		  .social-media a {
+			margin: 0 10px;
+			color: #333;
+			font-size: 24px;
+			width: 3vh;
+			height: 3vh;
+		  }
+	
+		  .icon-facebook, 
+		  
+		  .social-media a:hover {
+			color: #4267b2; /* change the color on hover */
+		  }
+	
+		  p#dev {
+			white-space: nowrap;
+			font-family: 'Agrandir';
+			color: rgba(0,0,0,1);
+			text-align: left;
+			margin-left: 6vw;
+			top: 38vh;
+			position: relative;
+		
+		  }
+	
+		  p#dev {
+			white-space: nowrap;
+			font-family: 'Agrandir';
+			color: rgba(0,0,0,1);
+			text-align: left;
+			margin-left: 6vw;
+			top: 38vh;
+			position: relative;
+		
+		  }
+	
+		  footer {
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			margin-left: 4.5vw;
+			margin-top: 35vh;
+		  }
+		
+	
+	}
+
+	@media (max-width:768px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+
+	html {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		min-height: 100vh;
+		height: 100vh;
+		width: 100%;
+		margin: 0;
+		overflow-x: hidden;
+	}
+
+	
+
+	header {
+		background-color: #659FA3;
+		stroke: rgba(112,112,112,1);
+		height: 40vh;
+		width: 100vw;
+		overflow: hidden;
+        border: none;
+	}
+
+	#logo {
+		left: 5vw;
+		top: 8vh;
+		position: absolute;
+		overflow: visible;
+		width: 90vw;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'Canela';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.5em;
+		color: rgba(0,0,0,1);
+		letter-spacing: 2px;
+	}
+
+	#logo a {
+		color: inherit;
+        text-decoration: none;
+	}
+
+	#slogan {
+		left: 5vw;
+		top: 13vh;
+		position: absolute;
+		overflow: visible;
+		width: 508px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'Agrandir';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 0.8em;
+		color: rgba(85,85,85,1);
+		letter-spacing: 0.8px;
+	}
+	/* Styling for the hamburger icon */
+	.hamburger {
+		position: absolute;
+		top: 40px;
+		right: 10vw;
+		width: 4vh;
+		height: 4vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+		overflow: hidden;
+		z-index: 3;
+ 	}
+  
+  .line {
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	transition: all 0.3s ease-out;
+  }
+  
+  /* Styling for the "X" icon */
+  .hamburger.active #line-1 {
+	transform: translateY(1.8vh) rotate(43deg);
+	background-color: #fff;
+  }
+  
+  .hamburger.active #line-2 {
+	opacity: 0;
+  }
+  
+  .hamburger.active #line-3 {
+	transform: translateY(-1.8vh) rotate(-43deg);
+	background-color: #fff;
+  }
+
+	/* Styling for the menu */
+	/* Styling for the menu */
+	.menu-box {
+		position: fixed;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
+		height: 100vh;
+		background-color: rgb(50, 50, 50);
+		opacity: 0;
+		transition: opacity 0.3s ease-out;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 2;
+		pointer-events: none;
+	}
+
+	.menu-box.show {
+		opacity: 1;
+		pointer-events: initial;
+	}
+
+	body::before {
+		content: "";
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -1;
+		transition: opacity 0.3s ease-out;
+	}
+  
+  .menu-box.show + body::before {
+	display: block;
+	opacity: 1;
+  }
+
+	/* Styling for the menu buttons */
+	.menu_buttons {
+		margin-top: 15vh;
+		margin-left: 5vw;
+		padding: 0;
+		list-style: none;
+	}
+
+
+	.menu_buttons li a {
+		display: block;
+		padding: 15px;
+		color: #ffffff;
+		text-decoration: none;
+		font-family: 'Agrandir';
+	}
+
+
+	section {
+		height: 100vh;
+		flex: 1; /* distribute available space equally */
+		background-color: #eee; /* optional styling */
+    }
+	
+	section.programas {
+		position: relative;
+		width: 100vw;
+		height: 300vh;
+		left: 0px;
+		top: 0;
+		background-image: url("img/ComponentTMP_0-image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+	}
+
+	#title_4 {
+		white-space: nowrap;
+		font-family: 'Canela';
+		color: rgba(0,0,0,1);
+		text-align: left;
+		margin-left: 5vw;
+		top: 5vw;
+		position: relative;
+	}
+
+	.box-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 5vh 0;
+		display: none;
+        border: none;
+	  }
+	  
+	  .box {
+		width: 30vh;
+		height: 30vh;
+		border: 5px solid black;
+		margin: 2.5vh 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+
+	  .program {
+		font-family:'Canela';
+		font-size: 0.7em;
+		float:inline-start;
+		margin: 2vh auto;
+		width: 80%;
+		text-align: center;
+		border-bottom: 1px solid black; /* Set the bottom border to a solid black line */
+  		border-top: none; /* Remove the top border */
+  		border-left: none; /* Remove the left border */
+ 		border-right: none; /* Remove the right border */
+	  }
+
+	  .box a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 16px;
+		padding: 10px;
+		background-color: #000;
+		border-radius: 20px;
+	  }
+
+	.box-container .box button {
+		width: 50px;
+		height: 20px;
+		border-radius: 40px;
+		background-color: black;
+		color: white;
+		text-align: center;
+		cursor: pointer;
+		font-family: 'Agrandir';
+ 		margin-top: 9vh;
+		top: 8vh; /* adjust the value to position the button as desired */
+  		left: 25%; /* center the button horizontally */
+	  }
+
+	  button.btn-agendar {
+		font-size: 0.4em;
+		bottom: 5vh;
+	  }
+
+	  #dev {
+		position: relative;
+		cursor: pointer;
+		width: 100%;
+		left: 5vw;
+		top: 270vh;
+		
+	  }
+
+	  #dev span {
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: transform 0.5s ease;
+		opacity: 1;
+		font-family: 'Agrandir';
+	  }
+
+	  
+	  
+	  #dev #dev_text {
+		opacity: 0;
+		width: 100%;
+		font-family: 'Agrandir';
+	  }
+	  
+	  #dev:active #dev_text {
+		transform: translateX(10%);
+		opacity: 1;
+		transition: opacity 0.5s ease, transform 1s ease;
+	  }
+
+	  
+	
+
+	}
+	
+
+
+
