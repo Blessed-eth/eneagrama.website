@@ -8,7 +8,7 @@
     }
 
     body {
-        min-height: 100vh;
+        min-height: 120vh;
         height: 100vh;
         width: 100%;
         margin: 0;
@@ -42,7 +42,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1.5em;
-        color: rgba(0,0,0,1);
+        color: rgb(222, 222, 222);
         letter-spacing: 2px;
     }
 
@@ -63,7 +63,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1em;
-        color: rgb(0, 0, 0);
+        color: rgb(222, 222, 222);
         letter-spacing: 0.8px;
     }
     /* Styling for the hamburger icon */
@@ -105,7 +105,7 @@
 
     .menu_buttons li a {
         padding: 15px;
-        color: #000;
+        color: rgb(222, 222, 222);
         text-decoration: none;
         font-family: "Agrandir";
         font-size: 1.2em;
@@ -583,13 +583,7 @@
     
           
           
-        section.contacto {
-            margin: 0;
-            overflow: visible;
-            width: 100vw;
-            height: 100vh;
-            background-color: #71B9BE;
-        }
+  
     
         #title_5 {
             position: absolute;

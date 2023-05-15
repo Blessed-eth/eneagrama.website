@@ -32,7 +32,7 @@
 		}
 	
 		header {
-			background-color: #659FA3;
+			background-color: #5d9da3;
 			stroke: rgba(112,112,112,1);
 			height: 20vh;
 			width: 100vw;
@@ -57,7 +57,7 @@
 			font-style: normal;
 			font-weight: normal;
 			font-size: 1.5em;
-			color: rgba(0,0,0,1);
+			color: rgb(222, 222, 222);
 			letter-spacing: 2px;
 		}
 	
@@ -78,7 +78,7 @@
 			font-style: normal;
 			font-weight: normal;
 			font-size: 1em;
-			color: rgb(0, 0, 0);
+			color: rgb(222, 222, 222);
 			letter-spacing: 0.8px;
 		}
 		/* Styling for the hamburger icon */
@@ -120,7 +120,7 @@
 	
 		.menu_buttons li a {
 			padding: 15px;
-			color: #000;
+			color: rgb(222, 222, 222);
 			text-decoration: none;
 			font-family: "Agrandir";
 			font-size: 1.2em;
@@ -204,7 +204,7 @@
 			position: relative;
 			line-height: 2;
 			top: 18vh;
-			right: 45vw;
+			right: 48vw;
 		}
 	
 		#biotext_p {
@@ -222,6 +222,7 @@
 			height: 90vh;
 			overflow: hidden;
 			position: absolute;
+			
 		}		
 	
 		#biopicimg {
@@ -568,12 +569,12 @@
 			margin: 0;
 			overflow: visible;
 			width: 100vw;
-			height: 100vh;
+			height: 112vh;
 			background-color: #71B9BE;
 		}
 	
 		#title_5 {
-			position: absolute;
+			position: relative;
 			font-family: 'Canela';
 			color: rgba(0,0,0,1);
 			width: 6vw;
@@ -582,6 +583,7 @@
 			text-align: left;
 			margin-left: 10vw;
 			border-top: 3px solid black;
+			top: 5vh;
 		}
 	
 		form {
@@ -758,7 +760,7 @@
 			font-style: normal;
 			font-weight: normal;
 			font-size: 0.8em;
-			color: rgba(0,0,0,1);
+			color: rgb(222, 222, 222);
 			letter-spacing: 2px;
 		}
 	
@@ -780,7 +782,7 @@
 			font-style: normal;
 			font-weight: normal;
 			font-size: 0.8em;
-			color: rgb(0, 0, 0);
+			color: rgb(222, 222, 222);
 			letter-spacing: 0.8px;
 		}
 		/* Styling for the hamburger icon */
@@ -818,7 +820,7 @@
 	
 		.menu_buttons li a {
 			padding: 15px;
-			color: #000;
+			color: rgb(222, 222, 222);
 			text-decoration: none;
 			font-family: "Agrandir";
 		}
@@ -850,8 +852,8 @@
 			width: 200%; 
 			position: absolute;
 			height: 100%;
-			
 			top: 0; 
+			left: -45vh;
 		  }
 		  
 	
@@ -1500,7 +1502,7 @@
 		color: #000;
 		text-decoration: none;
 		font-family: "Agrandir";
-		color:#fff;
+		color: rgb(222, 222, 222);
 	}
 	
 	section {
