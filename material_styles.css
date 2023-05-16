@@ -118,6 +118,12 @@
         left: 8%;
     }
 
+    section {
+      height: 110vh;
+      flex: 1; /* distribute available space equally */
+      
+      }
+
     section.book_section p {
         width: 42vw;
         color: rgb(194, 194, 194);
@@ -558,33 +564,33 @@
     
         
         section {
-            height: 100vh;
+            height: 120vh;
             flex: 1; /* distribute available space equally */
             
             }
     
             #book_pic {
                 position: absolute;
-                width: 40vw;
+                width: 80vw;
                 top: 30vh;
-                left: 8%;
+                left: 50%;
+                transform: translateX(-50%);
             }
         
             section.book_section p {
-                width: 42vw;
+                width: 80vw;
                 color: rgb(194, 194, 194);
-                left: 50vw;
-                top: 10vh;
+                top: 50vh;
                 position: relative;
                 font-family: "Agrandir";
                 font-size: 1em;
                 line-height: 4vh;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 5vh;
             }
     
           
-          
-  
-    
         #title_5 {
             position: absolute;
             font-family: 'Canela';
@@ -721,6 +727,5 @@
             transition: opacity 0.5s ease, transform 1s ease;
           }
           
-        
-    
+
         }
