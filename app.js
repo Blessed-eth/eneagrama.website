@@ -3,14 +3,15 @@ const posterImage = document.getElementById('poster_image');
 const video = document.getElementById('rockclimb');
 
 // Add an event listener to start loading the video
-video.addEventListener('loadedmetadata', function() {
+video.addEventListener('canplaythrough', function() {
   // Replace the poster image with the video
   posterImage.style.display = 'none';
   video.style.display = 'block';
-  
+
   // Start playing the video
   video.play();
 });
+
 
 function toggleMenu() {
   const hamburger = document.querySelector('.hamburger');
