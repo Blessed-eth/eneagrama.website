@@ -42,7 +42,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1.5em;
-        color: rgba(0,0,0,1);
+        color: rgb(222, 222, 222);
         letter-spacing: 2px;
     }
 
@@ -63,7 +63,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1em;
-        color: rgb(0, 0, 0);
+        color: rgb(222, 222, 222);
         letter-spacing: 0.8px;
     }
     /* Styling for the hamburger icon */
@@ -105,7 +105,7 @@
 
     .menu_buttons li a {
         padding: 15px;
-        color: #000;
+        color: rgb(222, 222, 222);
         text-decoration: none;
         font-family: "Agrandir";
         font-size: 1.2em;
@@ -248,13 +248,13 @@
       
     input::placeholder {
         font-family: "Agrandir";
-        color: #999;
+        color: #000;
         text-indent: 1vw;
       }
 
     textarea::placeholder {
         font-family: "Agrandir";
-        color: #999;;
+        color: #000;
         text-indent: 1vw;
     }
       
@@ -393,7 +393,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 0.8em;
-    color: rgba(0,0,0,1);
+    color: rgb(222, 222, 222);
     letter-spacing: 2px;
   }
 
@@ -415,7 +415,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 0.8em;
-    color: rgb(0, 0, 0);
+    color: rgb(222, 222, 222);
     letter-spacing: 0.8px;
   }
   /* Styling for the hamburger icon */
@@ -453,7 +453,7 @@
 
   .menu_buttons li a {
     padding: 15px;
-    color: #000;
+    color: rgb(222, 222, 222);
     text-decoration: none;
     font-family: "Agrandir";
   }
@@ -622,13 +622,13 @@ section.service .btn{
     
   input::placeholder {
     font-family: "Agrandir";
-    color: #999;
+    color: #000;
     text-indent: 5vw;
     }
 
   textarea::placeholder {
     font-family: "Agrandir";
-    color: #999;
+    color: #000;
     text-indent: 5vw;
   }
     
@@ -729,7 +729,7 @@ section.service .btn{
 		font-style: normal;
 		font-weight: normal;
 		font-size: 0.8em;
-		color: rgba(0,0,0,1);
+		color: rgb(222, 222, 222);
 		letter-spacing: 2px;
 	}
 
@@ -757,7 +757,7 @@ section.service .btn{
 		font-style: normal;
 		font-weight: normal;
 		font-size: 0.8em;
-		color: rgb(0, 0, 0);
+		color: rgb(222, 222, 222);
 		letter-spacing: 0.8px;
 	}
 
@@ -842,10 +842,9 @@ section.service .btn{
 
 	.menu_buttons li a {
 		padding: 15px;
-		color: #000;
+		color: rgb(222, 222, 222);
 		text-decoration: none;
 		font-family: "Agrandir";
-		color:#fff;
 	}
 
 
@@ -996,13 +995,13 @@ section.service .btn{
 	  
 	input::placeholder {
 		font-family: "Agrandir";
-		color: #999;
+		color: #000;
 		text-indent: 5vw;
 	  }
 
 	textarea::placeholder {
 		font-family: "Agrandir";
-		color: #999;
+		color: #000;
 		text-indent: 5vw;
 	}
 	  

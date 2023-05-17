@@ -39,6 +39,10 @@
 			overflow: hidden;
 		}
 
+		#logo0 {
+			width: 20vw;
+		}
+
 		#logo0 img{
 			width: 40px;
 			margin-top: 8vh;
@@ -50,7 +54,7 @@
 			top: 8vh;
 			position: absolute;
 			overflow: visible;
-			width: 90vw;
+			width: 30vw;
 			white-space: nowrap;
 			text-align: left;
 			font-family: 'Great Day bold Personal Use';
@@ -71,7 +75,7 @@
 			top: 13vh;
 			position: absolute;
 			overflow: visible;
-			width: 508px;
+			width: 400px;
 			white-space: nowrap;
 			text-align: left;
 			font-family: 'Agrandir';
@@ -87,17 +91,21 @@
 		}
 	
 		.nav-menu {
-			height: 100%;
-			
+			height: 30%;
+			width: 80%;
+			position: absolute;
+			left: 20%;
+			top: 0;
 		}
 	
 		/* Styling for the menu */
 		.menu-box {
 			top: 0;
 			right: 0;
-			width: 50%;
+			float: right;
+			width: 60%;
 			height: 20vh;
-			position: absolute;
+			position: relative;
 			display: flex;
 			justify-items: center;
 			align-items: center;
@@ -105,11 +113,9 @@
 	
 		/* Styling for the menu buttons */
 		.menu_buttons {
+			margin: 0;
+			padding: 0;
 			list-style: none;
-			left: 30vw;
-			margin-left: 6vw;
-			white-space: nowrap;
-			margin-right: 3vw;
 		}
 	
 		.menu_buttons li {
@@ -134,7 +140,7 @@
 	
 		#hero {
 			width: 100vw;
-			height: 80vh;
+			height: 45vw;
 			overflow: hidden;
 			top: 20vh;
 			display: flex;
@@ -147,14 +153,13 @@
 			width: 100vw;
 			height: 80vh;
 			overflow: hidden;
+			padding-bottom: 56.25%;
 		}
 	
 		#rockclimb {
-			width: 290vw;
+			width: 100%;
 			position: relative;
-			right: 95vw;
-			height: 117vh;
-			top: -16vh;
+			top: 20px;
 		}
 	
 		h1 {
@@ -164,7 +169,6 @@
 			vertical-align: middle;
 			letter-spacing: 5px;
 			z-index: 1;
-			top: 40vh;
 			font-size: 3em;
 		}
 	
@@ -204,7 +208,8 @@
 			position: relative;
 			line-height: 2;
 			top: 18vh;
-			right: 48vw;
+			right: 25%;
+			
 		}
 	
 		#biotext_p {
@@ -217,29 +222,30 @@
 		}
 	
 		#biopic {
-			min-width: 100%;
+			width: 50vw;
 			left: 50%;
 			height: 90vh;
-			overflow: hidden;
 			position: absolute;
-			
+			overflow: hidden;
 		}		
 	
 		#biopicimg {
 			position: relative;
 			min-height: 10%;
-			width: 60%;
-			left: -5vw;
-			bottom: 10vh;
+			height: 100%;
+			width: 180%;
+			left: -20vw;
+			object-fit: cover;
 		}
 
 		#bioinfo {
-			height: 20vh;
-			width: 30vw;
-			left: 18vh;
-			bottom: -70vh;
-			position: absolute;
+			height: 20%;
+			width: 40%;
+			right: 55%;
+			top: 55%;
+			position: relative;
 			overflow: hidden;
+			margin-top: 5vh;
 		}
 
 		#bioinfopic {
@@ -255,13 +261,13 @@
 			display: inline-block;
 			background-color: black;
 			color: white;
-			padding: 15px 30px;
 			text-decoration: none;
+			padding: 15px 30px;
 			border-radius: 5px;
-			position: absolute;
-			height: 8vh;
-			right: 72vw;
-			bottom: -82vh;
+			position: relative;
+			top: 80%;
+			right: 70%;
+			height: 60px;
 			cursor: pointer;
 			font-family: "Agrandir";
 		  }
@@ -516,7 +522,7 @@
 			position: relative;
 			text-align: center;
 			justify-content: center;
-			border-bottom: 1px solid black; /* Set the bottom border to a solid black line */
+			
 			top: 3vh;
 			left: 5vh;
 		  }
@@ -615,13 +621,13 @@
 		  
 		input::placeholder {
 			font-family: "Agrandir";
-			color: #999;
+			color: #000000;
 			text-indent: 1vw;
 		  }
 	
 		textarea::placeholder {
 			font-family: "Agrandir";
-			color: #999;;
+			color: #000000;;
 			text-indent: 1vw;
 		}
 		  
@@ -651,7 +657,7 @@
 			position: relative;
 			bottom: 4vh;
 			height: 5vh;
-			width: 90%;
+			width: 20%;
 			top: 22vh;
 			left: 20vh;
 		  }
@@ -792,7 +798,6 @@
 	
 		.nav-menu {
 			height: 100%;
-			
 		}
 	
 		/* Styling for the menu */
@@ -833,9 +838,9 @@
 	
 		#hero {
 			width: 100vw;
-			height: 65vh;
+			height: 45vw;
 			overflow: hidden;
-			top: 20vh; /* new vertical position for larger viewports */
+			top: 20vh;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -844,17 +849,16 @@
 		#hero_img {
 			position: relative;
 			width: 100vw;
-			height: 65vh;
+			height: 80vh;
 			overflow: hidden;
-		  }
-		  
-		  #rockclimb {
-			width: 200%; 
-			position: absolute;
-			height: 100%;
-			top: 0; 
-			left: -45vh;
-		  }
+			padding-bottom: 56.25%;
+		}
+	
+		#rockclimb {
+			width: 100%;
+			position: relative;
+			top: 15vh;
+		}
 		  
 	
 		h1 {
@@ -864,8 +868,7 @@
 			vertical-align: middle;
 			letter-spacing: 5px;
 			z-index: 1;
-			top: 40vh;
-			font-size: 2em;
+			font-size: 3em;
 		}
 	
 		section.bio {
@@ -927,8 +930,9 @@
 		
 		#biopicimg{
 			height: 150%;
-			right: 8vh;
+			right: 160%;
 			position: relative;
+			object-fit: cover;
 		}
 		#bioinfo {
 		display: none;
@@ -1280,13 +1284,13 @@
 		  
 		input::placeholder {
 			font-family: "Agrandir";
-			color: #999;
+			color: #000000;
 			text-indent: 5vw;
 		  }
 	
 		textarea::placeholder {
 			font-family: "Agrandir";
-			color: #999;
+			color: #000000;
 			text-indent: 5vw;
 		}
 		  
@@ -1511,32 +1515,29 @@
 		background-color: #eee; /* optional styling */
 		}
 
-	#hero {
-		width: 100%;
-		height: 65vh;
-		overflow: hidden;
-		top: 30vh; /* default vertical position */
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	 	}
-	  
-	  #hero_img {
-		position: relative;
-		max-width: 100%;
-		height: auto;
-		overflow:visible;	
-		left: 0;
-		right: 0;
-		}
-	  
-	  #rockclimb {
-		width: 270%;
-		position: relative;
-		right: 50%;
-		transform: translateX(-15%);
-		overflow: hidden;
-	  	}
+		#hero {
+			width: 100%;
+			height: 45vw;
+			top: 20vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+		  }
+		  
+		  #hero_img {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		  }
+		  
+		  #rockclimb {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		  }
+		  
 	  
 
 	h1 {
@@ -1546,7 +1547,7 @@
 		vertical-align: middle;
 		letter-spacing: 5px;
 		z-index: 1;
-		top: 40vh;
+		font-size: 2em;
 		}
 
 	section.bio {
@@ -1994,13 +1995,13 @@
 	  
 	input::placeholder {
 		font-family: "Agrandir";
-		color: #999;
+		color: #000000;
 		text-indent: 5vw;
 	  }
 
 	textarea::placeholder {
 		font-family: "Agrandir";
-		color: #999;
+		color: #000000;
 		text-indent: 5vw;
 	}
 	  
