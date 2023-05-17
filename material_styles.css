@@ -529,11 +529,13 @@
             z-index: 1;
             transform: translateY(-20px);
             transition: all 0.8s ease;
+            pointer-events: none; 
           }
     
           .nav-menu .menu-box.slide-in {
             opacity: 1;
             transform: translateY(10vh);
+            pointer-events: auto; 
           }
           
     
