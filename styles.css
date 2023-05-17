@@ -1675,7 +1675,7 @@
 		position: relative;
 		overflow: visible;
 		width: 100vw;
-		height: 110vh;
+		height: 90vh;
 		background-color: #C9C9C9;
 		top: 0;
 		display: flex;
@@ -1762,7 +1762,7 @@
 
 	  .test_box {
 		background-color: white;
-		top: 20vh;
+		top: 16vh;
 		height: 30vw;
 		width: 80vw;
 		margin: 2vh auto;
