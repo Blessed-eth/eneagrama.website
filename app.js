@@ -1,3 +1,8 @@
+// Add 'loaded' class to the body when the page is fully loaded
+window.addEventListener('load', function() {
+  document.body.classList.add('loaded');
+});
+
 // Get the necessary elements
 const posterImage = document.getElementById('poster_image');
 const video = document.getElementById('rockclimb');
