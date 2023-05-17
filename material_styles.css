@@ -20,7 +20,7 @@
         background-color: #659FA3;
         stroke: rgba(112,112,112,1);
         height: 20vh;
-        width: 100vw;
+        width: 120vw;
         overflow: hidden;
     }
 
@@ -118,7 +118,7 @@
         left: 8%;
     }
 
-    section {
+    section.book_section {
       height: 110vh;
       flex: 1; /* distribute available space equally */
       
@@ -205,7 +205,7 @@
         background-color: #659FA3;
         stroke: rgba(112,112,112,1);
         height: 20vh;
-        width: 100vw;
+        width: 110vw;
         overflow: hidden;
     }
 
@@ -266,6 +266,7 @@
             right: 4vh;
             top: 7vh;
             z-index: 2;
+            display: none;
           }
           
           .line {
@@ -297,52 +298,38 @@
         }
 
     /* Styling for the menu */
-    .nav-menu .menu-box {
-        position: fixed;
-        top: -10vh;
-        width: 100%;
-        height: 100vh;
-        opacity: 0;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
-        z-index: 1;
-        transform: translateY(-20px);
-        transition: all 0.8s ease;
+    .menu-box {
+      top: 0;
+			right: 0;
+			width: 40vw;
+			height: 20vh;
+			position: absolute;
+			display: flex;
+			justify-items: center;
+			align-items: center;
       }
-
-      .nav-menu .menu-box.slide-in {
-        opacity: 1;
-        transform: translateY(10vh);
-      }
-      
 
     /* Styling for the menu buttons */
     .menu_buttons {
         margin: 0;
         padding: 0;
         list-style: none;
-        top: 10vh;
-        width: 50%;
-        height: 80%;
+
     }
 
     .menu_buttons li {
-        display: list-item;
-        margin-top: 10vh;
-        margin-left: 5vh;
+      display: inline-block;
     }
 
     .menu_buttons li a {
         padding: 15px;
-        color: #000;
+        color:#fff;
         text-decoration: none;
         font-family: "Agrandir";
-        color:#fff;
     }
 
-
-    
-    section {
-        height: 100vh;
+    section.book_section {
+        height: 190vh;
         flex: 1; /* distribute available space equally */
         }
     #book_pic {
@@ -427,7 +414,7 @@
             background-color: #659FA3;
             stroke: rgba(112,112,112,1);
             height: 20vh;
-            width: 100vw;
+            width: 110vw;
             overflow: hidden;
         }
     
@@ -464,7 +451,7 @@
             top: 10vh;
             position: absolute;
             overflow: visible;
-            width: 508px;
+            width: 60vw;
             white-space: nowrap;
             text-align: left;
             font-family: "Agrandir";
@@ -565,16 +552,16 @@
     
     
         
-        section {
+        section.book_section {
             height: 120vh;
             flex: 1; /* distribute available space equally */
             
             }
     
             #book_pic {
-                position: absolute;
+                position: relative;
                 width: 80vw;
-                top: 30vh;
+                top: 10vh;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -582,7 +569,7 @@
             section.book_section p {
                 width: 80vw;
                 color: rgb(194, 194, 194);
-                top: 50vh;
+                top: 10vh;
                 position: relative;
                 font-family: "Agrandir";
                 font-size: 1em;

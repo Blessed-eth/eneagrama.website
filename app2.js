@@ -1,52 +1,35 @@
-const boxes = document.querySelectorAll('.box');
-const body = document.querySelector('body');
-let expandedBox = null;
-let hoverTimeout;
-
-// Expand box on hover
-boxes.forEach(box => {
-  box.addEventListener('mouseenter', () => {
-    hoverTimeout = setTimeout(() => {
-      if (!box.classList.contains('expanded')) {
-        boxes.forEach(otherBox => {
-          if (otherBox !== box && !otherBox.classList.contains('expanded')) {
-            otherBox.classList.add('non-expandable');
-          }
-        });
-        box.classList.add('expanded');
-        expandedBox = box;
-        body.classList.add('no-scroll');
-      }
-    }, 500);
+function toggleMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const lines = document.querySelectorAll('.line');
+  
+  hamburger.classList.toggle('active');
+  
+  lines.forEach(line => {
+    line.classList.toggle('active');
   });
+} // Added closing brace
 
-  box.addEventListener('mouseleave', () => {
-    clearTimeout(hoverTimeout);
-  });
-});
+window.addEventListener('load', () => {
+  // Execute your animation initialization code here
 
-// Collapse box on click outside of box
-document.addEventListener('click', event => {
-  if (expandedBox !== null && !expandedBox.contains(event.target)) {
-    expandedBox.classList.remove('expanded');
-    boxes.forEach(box => {
-      box.classList.remove('non-expandable');
+  const menuBox = document.querySelector('.menu-box');
+  const menuButtons = document.querySelectorAll('.menu_buttons li a');
+
+  const hamburger = document.querySelector('.hamburger');
+  if (hamburger) {
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      menuBox.classList.toggle('slide-in');
     });
-    expandedBox.style.cssText = "";
-    expandedBox = null;
-    body.classList.remove('no-scroll');
   }
-});
 
-// Collapse box on press of escape key
-document.addEventListener('keydown', event => {
-  if (expandedBox !== null && event.key === 'Escape') {
-    expandedBox.classList.remove('expanded');
-    boxes.forEach(box => {
-      box.classList.remove('non-expandable');
+  if (menuButtons) {
+    menuButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        hamburger.classList.remove('active');
+        menuBox.classList.remove('slide-in');
+      });
     });
-    expandedBox.style.cssText = "";
-    expandedBox = null;
-    body.classList.remove('no-scroll');
   }
+
 });
