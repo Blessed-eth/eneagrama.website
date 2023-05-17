@@ -87,23 +87,6 @@ window.addEventListener('load', () => {
     },
   });
 
-  const bioSection = document.querySelector(".bio");
-  const title = document.querySelector("#title_2");
-  const bioText = document.querySelector("#biotext");
-
-  function animateOnScroll() {
-    const sectionTop = bioSection.getBoundingClientRect().top;
-    const sectionHeight = bioSection.offsetHeight;
-    const scrollPos = window.scrollY;
-
-    if (sectionTop - window.innerHeight + 10 < scrollPos && sectionTop + sectionHeight > scrollPos) {
-      bioSection.classList.add("animated");
-    } else {
-      bioSection.classList.remove("animated");
-    }
-  }
-
-  window.addEventListener("scroll", animateOnScroll);
 
   const button = document.querySelector('.bio_cta');
 

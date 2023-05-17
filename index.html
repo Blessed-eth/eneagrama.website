@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Swiper CSS file -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -54,11 +55,11 @@
   </section>
 
   <section class="bio">
-    <div id="title_2" class="fade move">
+    <div id="title_2" >
       <h2>SOBRE <br/>FANNY</h2>
     </div>
   
-    <div id="biotext" class="fade move">
+    <div id="biotext">
       <p id= "biotext_p">Fanny Torres Silva, docente con formación en Chile e Inglaterra 
         desarrolló la enseñanza del Eneagrama en un programa de 5 pasos que tiene como 
         objetivo el uso de esta herramienta milenaria de transformación en nuestra vida 
@@ -81,7 +82,7 @@
 los demás no es enseñarles tus riquezas, 
 sino hacerles ver la suya propia.”
     </h2>
-    <h2 class="fade move" id="author">~Goethe~</h2>
+    <h2 id="author">~Goethe~</h2>
 
 
   </section>
@@ -246,6 +247,16 @@ sino hacerles ver la suya propia.”
       </p>
     </footer>
   </section>
+
+  <script>
+          $(document).ready(function() {
+            $(document).ready(function() {
+        $('#dev').on('click', function() {
+          $(this).toggleClass('active');
+        });
+      });
+    });
+  </script>
   
   <script src="app.js"></script>
   <!-- Swiper JavaScript file -->

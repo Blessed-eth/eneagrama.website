@@ -1570,7 +1570,6 @@
 		text-align: center;
 		z-index: 1;
 		font-family: 'Canela';
-		opacity: 0;
 		transform: translateX(-20px);
 		}
 
@@ -1584,7 +1583,6 @@
 		z-index: 1;
 		word-wrap:break-word;
 		position: relative;
-		opacity: 0;
 		transition: opacity 0.5s;
 		line-height: 1.5;
 		}
@@ -1595,16 +1593,6 @@
 		height: 100%;
 		font-size: 1em;
 		}
-
-	.bio.animated #title_2,
-	.bio.animated #biotext {
-	opacity: 1;
-	transform: none;
-	transform: translateX(0px);
-	transition: opacity 0.4s, transform 0.4s;
-}
-
-
 
 	#biopic {
 		margin-top: 5vh;
@@ -1842,7 +1830,7 @@
 	}
 
 	.box-container {
-		height: 90%;
+		height: 80%;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
@@ -1860,6 +1848,10 @@
 		border-radius: 20px; /* or any other value you prefer */
 		overflow: hidden;
 		position: relative;
+	  }
+	  
+	  .box:nth-child(5) {
+		grid-column: 1 / span 2;
 	  }
 	  
 	  .program {
@@ -1889,7 +1881,7 @@
 		margin: 0;
 		overflow: visible;
 		width: 100vw;
-		height: 100vh;
+		height: 110vh;
 		background-color: #71B9BE;
 	}
 
@@ -1902,6 +1894,7 @@
 		padding-top: 3vh;
 		text-align: left;
 		margin-left: 5vw;
+		margin-top: 10vh;
 		border-top: 3px solid black;
 	}
 
@@ -2006,7 +1999,6 @@
 		position: relative;
 		cursor: pointer;
 		width: 100%;
-		
 	  }
 	  
 	  #dev span {
@@ -2016,12 +2008,12 @@
 		transition: transform 0.5s ease;
 		opacity: 1;
 		font-family: "Agrandir";
+		color: #000;
 	  }
-
+	  
 	  #dev span#dev_text {
 		opacity: 0;
 	  }
-
 	  
 	  span #dev_text {
 		opacity: 0;
@@ -2030,11 +2022,12 @@
 		left: 3vh;
 	  }
 	  
-	  #dev:active #dev_text {
+	  #dev.active #dev_text {
 		transform: translateX(10%);
 		opacity: 1;
 		transition: opacity 0.5s ease, transform 1s ease;
 	  }
+	  
 	  
 	
 
