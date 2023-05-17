@@ -1,4 +1,4 @@
-// POSTER video loading: Get the necessary elements
+// Get the necessary elements
 const posterImage = document.getElementById('poster_image');
 const video = document.getElementById('rockclimb');
 
@@ -7,6 +7,8 @@ video.addEventListener('loadedmetadata', function() {
   // Replace the poster image with the video
   posterImage.style.display = 'none';
   video.style.display = 'block';
+  
+  // Start playing the video
   video.play();
 });
 
