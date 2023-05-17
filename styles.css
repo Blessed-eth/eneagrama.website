@@ -902,19 +902,22 @@
 		}
 	
 		#biopic {
-			height: 70vh;
-			overflow: hidden;
-			position: absolute;
 			width: 50vw;
-			right: 0;
-		}	
-		
-		#biopicimg{
-			height: 150%;
-			right: 160%;
+			left: 50%;
+			height: 70vh;
+			position: absolute;
+			overflow: hidden;
+		}		
+	
+		#biopicimg {
 			position: relative;
+			min-height: 10%;
+			height: 100%;
+			width: 180%;
+			left: -20vw;
 			object-fit: cover;
 		}
+
 		#bioinfo {
 		display: none;
 		}
