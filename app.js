@@ -2,20 +2,30 @@
 window.addEventListener('load', function() {
   document.body.classList.add('loaded');
 });
-
 // Get the necessary elements
 const posterImage = document.getElementById('poster_image');
 const video = document.getElementById('rockclimb');
 
-// Add an event listener to start loading the video
-video.addEventListener('canplaythrough', function() {
+// Function to start video playback
+function startVideoPlayback() {
   // Replace the poster image with the video
   posterImage.style.display = 'none';
   video.style.display = 'block';
 
   // Start playing the video
   video.play();
-});
+
+  // Remove the event listeners
+  video.removeEventListener('canplaythrough', startVideoPlayback);
+  document.removeEventListener('mousemove', startVideoPlayback);
+}
+
+// Add event listener to start loading the video
+video.addEventListener('canplaythrough', startVideoPlayback);
+
+// Add event listener to detect mouse movement and start video playback
+document.addEventListener('mousemove', startVideoPlayback);
+
 
 
 function toggleMenu() {
