@@ -133,14 +133,17 @@
         position: relative;
     }
 
-   section.service h2 {
-        font-family: 'Canela';
-        width: 40vh;
-        font-size: 2em;
-        position: absolute;
-        left: 10%;  
-        color: rgb(194, 194, 194);
-        top: 10vh;
+    section.service h2 {
+      font-family: 'Canela';
+      width: 80%;
+      font-size: 2em;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgb(194, 194, 194);
+      top: 10vh;
+      text-align: center;
+      line-height: 5vh;
     }
 
     #zoompic {
@@ -496,12 +499,16 @@ header {
 
   section.service h2 {
     font-family: 'Canela';
-    font-size: 2em;
+    width: 80%;
+    font-size: 1.5em;
     position: absolute;
-    left: 20vh;
-    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
     color: rgb(194, 194, 194);
-}
+    top: 5vh;
+    text-align: center;
+    line-height: 5vh;
+  }
 
 #zoompic {
   width: 20vw;
@@ -884,13 +891,15 @@ header {
 
   section.service h2 {
     font-family: 'Canela';
-    font-size: 5vw;
+    width: 80%;
+    font-size: 2em;
     position: absolute;
-    top: 5vh;
     left: 50%;
     transform: translateX(-50%);
     color: rgb(194, 194, 194);
-    width: 80%;
+    top: 2vh;
+    text-align: center;
+    line-height: 5vh;
   }
 
   #zoompic {
@@ -918,22 +927,25 @@ header {
     top: -300px;
   }
 
-section.service .btn{
-  width: 100px;
-  height: 25px;
-  border-radius: 40px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: "Agrandir";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 5vh;
-  padding: 20px 30px;
-}
+  section.service .btn {
+    width: 20vw;
+    height: 8vw;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Agrandir";
+    font-size: 2vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 #icon-description {
   position: relative;
@@ -1112,22 +1124,58 @@ section.service .btn{
   
     section.service h2 {
       font-family: 'Canela';
-      font-size: 5vw;
+      width: 80%;
+      font-size: 1em;
       position: absolute;
-      top: 2vh;
       left: 50%;
       transform: translateX(-50%);
       color: rgb(194, 194, 194);
-      width: 80%;
+      
+      text-align: center;
+      line-height: 5vh;
     }
   
     #zoompic {
       width: 30vh;
       position: relative;
-      margin-top: 350px;
+      margin-top: 400px;
       left: 50%;
       transform: translate(-50%, -50%);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       max-width: 100%;
+    }
+
+    p#serviceText {
+      width: 70vw;
+      position: relative;
+      font-size: calc(2vw * 1.5);
+      white-space: normal;
+      font-family: 'Agrandir';
+      color: rgb(194, 194, 194);
+      line-height: 5.5vh;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5vh;
+      top: -300px;
+    }
+
+    section.service .btn {
+      width: 20vw;
+      height: 8vw;
+      border-radius: 40px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: "Agrandir";
+      font-size: 2vw;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     }

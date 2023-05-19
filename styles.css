@@ -1169,8 +1169,10 @@
 			border: 5px solid black;
 			margin: auto;
 			position: relative;
-			align-items: center;
 			border-radius: 20px; /* or any other value you prefer */
+			display: flex;
+			align-items: center;
+		  	flex-direction: column;
 		  }
 		  
 		  .box:nth-child(5) {
@@ -1180,12 +1182,24 @@
 	
 		  .program {
 			font-family: 'Canela';
-			font-size: 2em;
+			font-size: 1em;
 			width: 80%;
 			text-align: center;
 			margin: 0 auto; /* Add this line */
 			margin-top: 2vh;
 		  }
+
+		  .box-container .box span {
+			font-size: 1vw;
+			font-family: "Agrandir";
+			text-align: center;
+			margin-top: 3vh;
+		  }
+
+		   .box-container .box img {
+			width: 35%;
+			margin-top: 3vh;
+		   }
 	
 		  .box a {
 			color: #fff;
@@ -1198,7 +1212,7 @@
 	
 		  .box-container .box button {
 			width: 100px;
-			height: 50px;
+			height: 40px;
 			border-radius: 40px;
 			background-color: black;
 			color: white;
@@ -1217,7 +1231,7 @@
 			margin: 0;
 			overflow: visible;
 			width: 100vw;
-			height: 100vh;
+			height: 120vh;
 			background-color: #71B9BE;
 		}
 	
@@ -1324,16 +1338,47 @@
 		  .social-media a:hover {
 			color: #4267b2; /* change the color on hover */
 		  }
+
+		  footer {
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			margin-left: 4.5vw;
+			margin-top: 35vh;
+		  }
 	
-		  p#dev {
-			white-space: nowrap;
-			font-family: "Agrandir";
-			color: rgba(0,0,0,1);
-			text-align: left;
-			margin-left: 6vw;
-			top: 38vh;
-			position: relative;
 		
+		  #dev {
+			position: relative;
+			cursor: pointer;
+			width: 100%;
+		  }
+		  
+		  #dev span {
+			position: absolute;
+			left: 3vh;
+			top: 8vh;
+			transition: transform 0.5s ease;
+			opacity: 1;
+			font-family: "Agrandir";
+			color: #000;
+		  }
+		  
+		  #dev span#dev_text {
+			opacity: 0;
+		  }
+		  
+		  span #dev_text {
+			opacity: 0;
+			width: 100vw;
+			font-family: "Agrandir";
+			left: 3vh;
+		  }
+		  
+		  #dev.active #dev_text {
+			transform: translateX(10%);
+			opacity: 1;
+			transition: opacity 0.5s ease, transform 1s ease;
 		  }
 		
 	
@@ -1834,7 +1879,7 @@
 	#title_4 {
 		white-space: nowrap;
 		font-family: 'Canela';
-		font-size: 8vw;
+		font-size: 5vw;
 		color: rgba(0,0,0,1);
 		text-align: left;
 		margin-left: 5vw;
@@ -1861,6 +1906,8 @@
 		border-radius: 20px; /* or any other value you prefer */
 		overflow: hidden;
 		position: relative;
+		display: flex;
+	  	flex-direction: column;
 	  }
 	  
 	  .box:nth-child(5) {
@@ -1869,11 +1916,22 @@
 	  
 	  .program {
 		font-family: 'Canela';
-		font-size: calc(2.5vw + 0.5rem);
+		font-size: calc(1vw + 0.5rem);
 		margin: 2vh auto;
 		width: 80%;
 		text-align: center;
 	  }
+
+	  .box-container .box span {
+		font-size: 1vw;
+		font-family: "Agrandir";
+		text-align: center;
+		margin-top: 3vh;
+	  }
+
+	   .box-container .box img {
+		width: 35%;
+	   }
 
 	.box-container .box button {
 		width: 70px;
