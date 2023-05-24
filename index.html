@@ -17,18 +17,18 @@
 
   <header>
     <div id="logo0">
-      <a href='index.html'> <img  src="./favicon.ico"/></a>
-    </div>
-    <span id="logo">
-      <a href="">
-        <span>Fanny Torres da Silva</span>
+      <a href='index.html'>
+        <img src="./favicon.ico" alt="Logo">
       </a>
-    </span>
-  
-    <div id="slogan">
-      <span>Maestra de Eneagrama</span>
+      <span id="logo">
+        <a href="index.html">
+          Fanny Torres da Silva
+        </a>
+        <span id="slogan">
+          Maestra de Eneagrama
+        </span>
+      </span>
     </div>
-  
     <nav class="nav-menu">
       <div class="hamburger" onclick="toggleMenu()">
         <div id="line-1" class="line"></div>
@@ -49,7 +49,7 @@
     <h1 id="title">ENEAGRAMA</h1>
   
     <div id="hero_img">
-      <img id="poster_image" src="./video/poster.png" alt="Video Poster Image">
+      <img id="poster_image" src="./video/poster.png" alt="Video Poster Image" loading="auto">
       <video id="rockclimb" playsinline autoplay muted loop source src="./video/file.mp4" type="video/mp4"></video>
     </div>
   </section>
@@ -114,7 +114,7 @@ sino hacerles ver la suya propia.”
               </span>
             </div>
             <div class="test_name" id="test_name_2">
-              <span>Isabel García, Retiro 2023</span>
+              <span>Isabel García-Reyes, Retiro 2023</span>
             </div>
           </div>
         </div>
@@ -187,7 +187,13 @@ sino hacerles ver la suya propia.”
 
   <section class="contacto" id="sec-contacto">
     <h2 id="title_5">Contacto</h2>
+
+    <div id="direccion">
+      <p id="direc-1">Apoquindo 6410 of. 605.<br> Las Condes, Santiago de Chile</p>
+      <p id="direc-2">Julian Alvarez 1678, depto. 602.<br> Palermo, Buenos Aires</p>
+    </div>
   
+    <div class="form-container">
     <form id="contact-form" method="post" action="https://formspree.io/f/myyaogly">
       <div class="form-group">
         <input type="text" id="name" name="name" placeholder="Nombre" required>
@@ -200,7 +206,8 @@ sino hacerles ver la suya propia.”
       </div>
       <button type="submit">Enviar</button>
     </form>
-    
+  </div>
+  
     <script>
       const form = document.getElementById('contact-form');
     
