@@ -147,7 +147,7 @@
     }
 
     #zoompic {
-      width: 20vw;
+      width: 30vw;
       margin: 0 auto;
       top: 35vh;
       position: absolute;
@@ -158,7 +158,7 @@
 
     p#serviceText {
         width: 50vw;
-        left: 35vw;
+        left: 40vw;
         position: absolute;
         top: 30vh;
         font-size: 1.2em;
@@ -905,7 +905,7 @@ header {
   #zoompic {
     width: 40vh;
     position: relative;
-    margin-top: 300px;
+    margin-top: 200px;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -924,7 +924,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 5vh;
-    top: -220px;
+    top: -100px;
   }
 
   section.service .btn {
@@ -955,7 +955,7 @@ header {
   justify-content: space-evenly;
   flex-wrap: no-wrap;
   color: rgb(194, 194, 194);
-  top: -220px;
+  top: -30px;
 }
 
 .icon-container {
@@ -1138,7 +1138,7 @@ header {
     #zoompic {
       width: 30vh;
       position: relative;
-      margin-top: 250px;
+      margin-top: 170px;
       left: 50%;
       transform: translate(-50%, -50%);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -1156,9 +1156,8 @@ header {
       left: 50%;
       transform: translateX(-50%);
       margin-top: 5vh;
-      top: -150px;
-    }
-
+      top: -90px;
+      }
     section.service .btn {
       width: 20vw;
       height: 8vw;
