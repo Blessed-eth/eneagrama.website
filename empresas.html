@@ -43,6 +43,7 @@
   </header>
 
     <section class="service">
+      <a id="arrowback" href="index.html"><img src="./img/icons/arrow-left-solid.svg"></a>
         <h2>Eneagrama para Empresas</h2>
         <img id="emppic" src="./img/panama.jpeg"/>
         
@@ -51,14 +52,34 @@
           en una organización. Permite además conciliar la vida personal 
           con la vida laboral, de forma más equilibrada. Mejora rendimientos y estilos de liderazgo al 
           comprender que no somos iguales y que tenemos gatillantes diferentes, dependiendo de nuestro 
-          eneatipo o forma de ver la vida. El eneagrama ejecutivo responde a la necesidad de realizar 
+          eneatipo o forma de ver la vida. El Eneagrama Ejecutivo responde a la necesidad de realizar 
           un cambio en la forma en que se aborda el entrenamiento de líderes de las organizaciones a 
-          través de un acercamiento integral a las personas, reconociendo todo el potencial y las 
-          limitaciones de los colaboradores y líderes, con el propósito de incorporar las distintas 
-          facetas del ser humano en sus procesos. Buscamos motivar, potenciar y enriquecer el trabajo 
-          en equipo, acortando las brechas con respecto a objetivos tanto personales como organizacionales.
+          través de un acercamiento integral a las personas, reconociendo todo el potencial de los colaboradores 
+          y líderes, con el propósito de incorporar las distintas facetas del ser humano en sus procesos. 
+          Buscamos motivar, potenciar y movilizar a la acción para que se ejecuten los cambios requeridos.
+          Lo importante es transferir al ejercicio el liderazgo.
         </p>
 
+        <div id="icon-description">
+          <div id="Formato" class="icon-container">
+              <img id="FormatoIcon" src="./img/icons/desktop-solid.svg" alt="Computer Icon">
+              <h3>Formato <br>Semi Presencial</h3>
+              <p></p>
+          </div>
+                      
+          <div id="Contenido" class="icon-container">
+            <img id="ContenidoIcon" src="./img/icons/book-solid.svg" alt="Book Icon">
+            <h3>Contenido</h3>
+              <p>Fundamentos <br> Liderazgo Coaching</p>
+          </div>
+          
+          <div id="Duracion" class="icon-container">
+            <img id="DuracionIcon" src="./img/icons/hourglass-half-solid.svg" alt="Hourglass Icon">
+            <h3>Duracion</h3>
+              <p>4 jornadas<br>8 hrs totales</p>
+          </div>
+        
+      </div>
 
         
        
@@ -69,19 +90,27 @@
 
   <section class="contacto" id="sec-contacto">
     <h2 id="title_5">Contacto</h2>
+
+    <div id="direccion">
+      <p id="direc-1">Apoquindo 6410 of. 605.<br> Las Condes, Santiago de Chile</p>
+      <p id="direc-2">Julian Alvarez 1678, depto. 602.<br>Buenos Aires, Argentina</p>
+    </div>
   
-    <form id="contact-form" method="post" action="https://formspree.io/f/myyaogly">
-      <div class="form-group">
-        <input type="text" id="name" name="name" placeholder="Nombre" required>
-      </div>
-      <div class="form-group">
-        <input type="email" id="email" name="email" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
+  
+    <div class="form-container">
+      <form id="contact-form" method="post" action="https://formspree.io/f/myyaogly">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
     
     <script>
       const form = document.getElementById('contact-form');
