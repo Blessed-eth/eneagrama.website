@@ -10,118 +10,121 @@
     
     body {
       min-height: 100vh;
-      height: 100vh;
-      margin: 0;
-      overflow-x: hidden;
+			height: 100vh;
+			width: 100%;
+			margin: 0;
+			overflow-x: hidden;
+			opacity: 1;
     }
     
 
     
     header {
-      display: flex;
-      align-items: center;
-      background-color: #659FA3;
-      stroke: rgba(112, 112, 112, 1);
-      height: 20vh;
-      width: 100%;
-      overflow: hidden;
-      margin: 0 auto;
-    }
-    
-    #logo0 {
-      display: flex;
-      align-items: center;
-      margin-right: 1vw;
-      margin-left: 20px;
-      flex: 1;
-    }
-    
-    #logo0 img {
-      position: relative;
-      width: 40px;
-    }
-    
-    #logo {
-      display: flex;
-      align-items: left;
-      font-family: 'Great Day bold Personal Use';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.5em;
-      color: rgb(222, 222, 222);
-      letter-spacing: 2px;
-      text-decoration: none;
-      flex-shrink: 0;
-      flex: 1; 
-      flex-direction: column;
-      height: 50px;
-      margin-left: 20px;
-      width: 50px;
-    }
-    
-    #logo a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    #slogan {
-      width: 250px;
-      height: 5px;
-      font-family: 'Agrandir';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 0.8em;
-      color: rgb(222, 222, 222);
-      letter-spacing: 0.8px;
-      margin-left: 5px;
-      flex-shrink: 0;
-      flex: 1; 
-    }
-    
-    
-    /* Styling for the hamburger icon */
-    .hamburger {
-      display: none;
-    }
-    
-    .nav-menu {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-    }
-    
-    /* Styling for the menu */
-    .menu-box {
-      position: relative;
-      top: 0;
-      float: right;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: left;
-      flex-wrap: nowrap;
-    }
-    
-    /* Styling for the menu buttons */
-    .menu_buttons {
-      list-style: none;
-      margin-right: 3vw;
-      padding: 0;
-    }
-    
-    .menu_buttons li {
-      display: inline-block;
-      margin-left: 1vw;
-    }
-    
-    .menu_buttons li a {
-      padding: 15px;
-      color: rgb(222, 222, 222);
-      text-decoration: none;
-      font-family: "Agrandir";
-      font-size: 1.2em;
-    }
+			display: flex;
+			align-items: center;
+			background-color: #659FA3;
+			stroke: rgba(112, 112, 112, 1);
+			height: 20vh;
+			width: 100%;
+			overflow: hidden;
+			margin: 0 auto;
+		  }
+		  
+		  #logo0 {
+			display: flex;
+			align-items: center;
+			margin-right: 1vw;
+			margin-left: 70px;
+			flex: 1;
+		  }
+		  
+		  #logo0 img {
+			position: relative;
+			width: 40px;
+		  }
+		  
+		  #logo {
+			display: flex;
+			align-items: left;
+			font-family: 'Great Day bold Personal Use';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.5em;
+			color: rgb(222, 222, 222);
+			letter-spacing: 2px;
+			text-decoration: none;
+			flex-shrink: 0;
+			flex: 1; 
+			flex-direction: column;
+			height: 50px;
+			margin-left: 20px;
+			width: 50px;
+		  }
+		  
+		  #logo a {
+			color: inherit;
+			text-decoration: none;
+		  }
+	  
+		  #slogan {
+			width: 250px;
+			height: 5px;
+			font-family: 'Agrandir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 0.8em;
+			color: rgb(222, 222, 222);
+			letter-spacing: 0.8px;
+			margin-left: 5px;
+			flex-shrink: 0;
+			flex: 1; 
+		  }
+		/* Styling for the hamburger icon */
+		.hamburger {
+			display: none;	
+		}
+	
+		.nav-menu {
+			height: 30%;
+			width: 80%;
+			position: absolute;
+			left: 20%;
+			top: 0;
+		}
+	
+		/* Styling for the menu */
+		.menu-box {
+			top: 0;
+			right: 0;
+			float: right;
+			width: 60%;
+			height: 20vh;
+			position: relative;
+			display: flex;
+			justify-items: center;
+			align-items: center;
+		}
+	
+		/* Styling for the menu buttons */
+		.menu_buttons {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+	
+		.menu_buttons li {
+			display: inline-block;
+			margin-left: 5vw;
+			wrap: nowrap;
+		}
+	
+		.menu_buttons li a {
+			padding: 15px;
+			color: rgb(222, 222, 222);
+			text-decoration: none;
+			font-family: "Agrandir";
+			font-size: 1.2em;
+		}
     
     section.service {
         height: 160vh;
@@ -196,12 +199,12 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 5vh;
+      bottom: 10vh;
       padding: 20px 30px;
     }
 
     #icon-description {
-        top: 50vh;
+        top: 45vh;
         position: relative;
         height: 32vh;
         display: flex;
@@ -236,67 +239,102 @@
       }
       
 
-    section.contacto {
+      section.contacto {
         margin: 0;
         overflow: visible;
         width: 100vw;
         height: 100vh;
         background-color: #71B9BE;
-    }
-
-    #title_5 {
-        position: absolute;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      #title_5 {
+        position: relative;
         font-family: 'Canela';
         color: rgba(0,0,0,1);
         width: 6vw;
         height: 15vh;
+        font-size: 2em;
+        padding-top: 3vh;
+        text-align: left;
+        margin: 0;
+        margin-left: 10vw;
+        border-top: 3px solid black;
+        top: 5vh;
+      }
+  
+      #direccion {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 30vw;
+        height: 30vh;
         padding-top: 3vh;
         text-align: left;
         margin-left: 10vw;
-        border-top: 3px solid black;
-        left: 0;
-    }
-
-    form {
+        top: 15vh;
+      }
+  
+      #direccion p {
         position: relative;
-        top: 20vh;
-    }
-
-    .form-group {
+        font-family: "Agrandir";
+        
+      }
+  
+      #direc-2 {
+        margin-top: 5vh;
+      }
+    
+      .form-container {
+        width: 50%;
+        position: relative;
+        left: 50%;
+        bottom: 25vh;
+      }
+  
+      form {
+        position: relative;
+        top: 5vh;
+        width: 100%;
+        height: 100%;
+      }
+    
+      .form-group {
         margin-bottom: 5vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         
-    }
-      
-    input[type="text"], input[type="email"], textarea {
+      }
+        
+      input[type="text"], input[type="email"], input[type="phone"], textarea {
         position: relative;
         border-radius: 30px;
         border: 1px solid black;
-        width: 40%;
+        width: 80%;
         padding: 10px;
         font-size: 16px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         font-family: "Agrandir";
         background-color: transparent;
-        left: 20vw;
         resize: none;
-    }
-      
-    input::placeholder {
+      }
+        
+      input::placeholder {
         font-family: "Agrandir";
-        color: #000;
+        color: #000000;
+        text-indent: 1vw;
+        }
+    
+      textarea::placeholder {
+        font-family: "Agrandir";
+        color: #000000;;
         text-indent: 1vw;
       }
-
-    textarea::placeholder {
-        font-family: "Agrandir";
-        color: #000;
-        text-indent: 1vw;
-    }
-      
-    button[type="submit"] {
+        
+      button[type="submit"] {
         background-color: #000;
         color: #fff;
         border: none;
@@ -304,85 +342,90 @@
         padding: 10px 20px;
         cursor: pointer;
         width: 40vw;
-        right: 10vw;
+        right: 5vw;
         position: absolute;
+        margin-top: 10vh;
         z-index:2;
         font-family: "Agrandir";
-    }
-      
-    button[type="submit"]:hover {
+      }
+        
+      button[type="submit"]:hover {
         background-color: #424141e9;
         
-    }
-
-      .social-media {
+      }
+    
+        .social-media {
         display: flex;
         justify-content: left;
         align-items: center;
         position: relative;
-        bottom: 4vh;
+        bottom: 15vh;
         height: 5vh;
-        width: 30%;
-        top: 22vh;
-        left: 20vh;
-      }
-      
-      .social-media a {
-        margin: 0 10px;
+        width: 20%;
+        margin-left: 10vw;
+        }
+        
+        .social-media a {
+        margin-right: 40px;
         color: #333;
         font-size: 24px;
         width: 3vh;
         height: 3vh;
-      }
-
-      .icon-facebook, 
-      
-      .social-media a:hover {
+        }
+    
+        .social-media a:hover {
         color: #4267b2; /* change the color on hover */
-      }
-
-      footer {
+        }
+    
+        footer {
         display: flex;
         justify-content: start;
         align-items: center;
-        margin-left: 4.5vw;
-      }
-
-      #dev span {
+        margin-left: 10vw;
+        height: 2vh;
+        width: 15%;
+        position: relative;
+        bottom: 10vh;
+        }
+    
+        #dev span {
         position: absolute;
-        left: 0;
         transition: transform 0.5s ease;
         opacity: 1;
         color: #000;
         font-family: 'Agrandir';
-      }
-
-      #dev {
+        }
+    
+        #dev {
         position: relative;
         cursor: pointer;
         width: 40px;
-        height: 40px;
-        width: 150px;
-        top: 40vh;
-        left: 6vw;
-      }
-      
-      #dev #dev_text {
+        height: 20px;
+        }
+        
+        #dev #dev_text {
         opacity: 0;
         font-family: 'Agrandir';
-      }
-      
-      #dev:hover #dev_text {
-        transform: translateX(15%);
+        width: 200px;
+        }
+        
+        #dev:hover #dev_text {
+        transform: translateX(45%);
         opacity: 1;
-        transition: opacity 0.5s ease, transform 0.5s ease;
+        transition: opacity 3s ease, transform 0.8s ease;
+        }
+  
+        #dev:not(:hover) #dev_text {
+        transform: translateX(-45%);
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.6s ease;
       }
-      
-      #dev:hover p {
+        
+        #dev:hover p {
         opacity: 0;
         transition: opacity 0.5s ease, transform 0.5s ease;
         transform: translateX(-100%);
-      }
+        }
 }
 
 @media (min-width:768px) and (max-width:1024px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
@@ -507,7 +550,7 @@ header {
   }
 
   section.service {
-    height: 160vh;
+    height: 150vh;
     flex: 1;
     background-color: #393939;
     position: relative

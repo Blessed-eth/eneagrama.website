@@ -112,23 +112,54 @@
     }
 
     #book_pic {
-        position: absolute;
-        width: 40vw;
-        top: 30vh;
-        left: 8%;
+      width: 40vw;
+      margin: 0 auto;
+      top: 40vh;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 2);
     }
 
     section.book_section {
-      height: 110vh;
+      height: 160vh;
       flex: 1; /* distribute available space equally */
       
+      }
+
+      #arrowback {
+        width: 2vh;
+        position: relative;
+        top: 10vh;
+        left: 5%;
+        display: inline-block; /* Add this line */
+        overflow: hidden; /* Add this line */
+      }
+      
+      #arrowback img {
+        max-width: 100%; /* Change 'width' to 'max-width' */
+        height: auto;
+        display: block;
+      }
+
+      section h2 {
+        font-family: 'Canela';
+        width: 80%;
+        font-size: 1.5em;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgb(194, 194, 194);
+        top: 25vh;
+        text-align: center;
+        line-height: 5vh;
       }
 
     section.book_section p {
         width: 42vw;
         color: rgb(194, 194, 194);
-        left: 50vw;
-        top: 10vh;
+        left: 30%;
+        top: 80vh;
         position: relative;
         font-family: "Agrandir";
         font-size: 1em;
@@ -559,11 +590,13 @@
             }
     
             #book_pic {
-                position: relative;
-                width: 80vw;
-                top: 10vh;
-                left: 50%;
-                transform: translateX(-50%);
+              width: 40vw;
+              margin: 0 auto;
+              top: 25vh;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              box-shadow: 0 0 10px rgba(0, 0, 0, 2);
             }
         
             section.book_section p {

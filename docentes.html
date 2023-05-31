@@ -35,7 +35,7 @@
       </div>
       <div class="menu-box">
         <ul class="menu_buttons">
-            <li><a href="index.html#sec-servicios">Servicios</a></li>
+            <li><a href="index.html#sec-servicios">Programas</a></li>
           <li><a href="material.html">Libro</a></li>
           <li><a href="#sec-contacto">Contacto</a></li>
         </ul>
@@ -46,12 +46,12 @@
     <section class="service">
       <a id="arrowback" href="index.html#sec-servicios"><img src="./img/icons/arrow-left-solid.svg"></a>
         <h2>Eneagrama para docentes</h2>
-        <img id="docpic" src="./img/pexels-yan-krukau-8613089.jpg"/>
+        <img id="docpic" src="./img/pexels-max-fischer-5212354.jpg"/>
         
         <p id="serviceText">Eneagrama para Docentes consiste en talleres destinados a profesores los 
-          que tienen como objetivo conocer la herramienta del eneagrama como un recurso pedagógico que 
+          que tienen como objetivo conocer la herramienta del Eneagrama como un recurso pedagógico que 
           permite acompañar de mejor manera al alumno considerando sus diferencias e intereses. 
-          El profesor podrá conocer : Qué es el Eneagrama, Cuál es su Eneatipo, Cómo se puede aplicar 
+          El profesor podrá conocer: Qué es el Eneagrama, cuál es su Eneatipo y cómo se puede aplicar 
           esta técnica en el aula. Desde su propio Eneatipo el profesor aprenderá cómo puede evitar colapsos
            y aumentar sus procesos de acompañamiento y mentoria de sus alumnos. Trabajamos a través de 
            diferentes técnicas como es el "Aula Socrática" que nos permite hacer preguntas poderosas.
@@ -90,19 +90,29 @@
 
   <section class="contacto" id="sec-contacto">
     <h2 id="title_5">Contacto</h2>
+
+    <div id="direccion">
+      <p id="direc-1">Apoquindo 6410 of. 605.<br> Las Condes, Santiago de Chile</p>
+      <p id="direc-2">Julian Alvarez 1678, depto. 602.<br>Buenos Aires, Argentina</p>
+    </div>
   
-    <form id="contact-form" method="post" action="https://formspree.io/f/myyaogly">
-      <div class="form-group">
-        <input type="text" id="name" name="name" placeholder="Nombre" required>
-      </div>
-      <div class="form-group">
-        <input type="email" id="email" name="email" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
+    <div class="form-container">
+      <form id="contact-form" method="post" action="https://formspree.io/f/myyaogly">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="phone" id="phone" name="phone" placeholder="Whatshapp" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
     
     <script>
       const form = document.getElementById('contact-form');

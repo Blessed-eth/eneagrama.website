@@ -35,7 +35,7 @@
       </div>
       <div class="menu-box">
         <ul class="menu_buttons">
-            <li><a href="index.html#sec-servicios">Servicios</a></li>
+            <li><a href="index.html#sec-servicios">Programas</a></li>
           <li><a href="material.html">Libro</a></li>
           <li><a href="#sec-contacto">Contacto</a></li>
         </ul>
@@ -46,7 +46,7 @@
     <section class="service">
       <a id="arrowback" href="index.html#sec-servicios"><img src="./img/icons/arrow-left-solid.svg"></a>
         <h2>Eneagrama para parejas</h2>
-        <img id="docpic" src="./img/IMG_0282.jpg"/>
+        <img id="parejaspic" src="./img/parejaspic.jpg"/>
         
         <p id="serviceText">Eneagrama para parejas esta pensado como un fin de semana destinado a personas 
             que quieran aprender como relacionarse mejor con los otros y entender de los aciertos y errores 
@@ -87,7 +87,12 @@
 
   <section class="contacto" id="sec-contacto">
     <h2 id="title_5">Contacto</h2>
+    <div id="direccion">
+      <p id="direc-1">Apoquindo 6410 of. 605.<br> Las Condes, Santiago de Chile</p>
+      <p id="direc-2">Julian Alvarez 1678, depto. 602.<br>Buenos Aires, Argentina</p>
+    </div>
   
+    <div class="form-container">
     <form id="contact-form" method="post" action="https://formspree.io/f/myyaogly">
       <div class="form-group">
         <input type="text" id="name" name="name" placeholder="Nombre" required>
@@ -96,10 +101,14 @@
         <input type="email" id="email" name="email" placeholder="Email" required>
       </div>
       <div class="form-group">
+        <input type="phone" id="phone" name="phone" placeholder="Whatshapp" required>
+      </div>
+      <div class="form-group">
         <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
       </div>
       <button type="submit">Enviar</button>
     </form>
+  </div>
     
     <script>
       const form = document.getElementById('contact-form');
